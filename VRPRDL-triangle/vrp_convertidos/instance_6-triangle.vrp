@@ -1,0 +1,57 @@
+NAME : instance_6-triangle
+TYPE : CVRP
+COMMENT : Simplified projection from VRPRDL JSON using first location of each real customer
+DIMENSION : 21
+EDGE_WEIGHT_TYPE : EUC_2D
+CAPACITY : 750
+
+NODE_COORD_SECTION
+1 0 0
+2 -25 0
+3 -99 56
+4 3 -28
+5 28 63
+6 8 -49
+7 -77 37
+8 162 65
+9 -106 3
+10 -101 -20
+11 29 43
+12 72 16
+13 -52 27
+14 -52 19
+15 63 40
+16 -17 49
+17 -53 -3
+18 4 170
+19 -12 -9
+20 -35 52
+21 -103 -16
+
+DEMAND_SECTION
+1 0
+2 65
+3 82
+4 54
+5 61
+6 74
+7 63
+8 38
+9 26
+10 53
+11 46
+12 58
+13 32
+14 61
+15 35
+16 34
+17 36
+18 78
+19 18
+20 36
+21 51
+
+DEPOT_SECTION
+1
+-1
+EOF

@@ -1,0 +1,77 @@
+instance_json=/mnt/c/Users/porin/OneDrive/Documentos/Python-Mestrado/Modelagem Matemática/Programação Inteira - Uchoa/Problema VRPRDL/instancias_turco/VRPRDL-triangle/json_convertidos/instance_3-triangle.json
+instance_log=/mnt/c/Users/porin/OneDrive/Documentos/Python-Mestrado/Modelagem Matemática/Programação Inteira - Uchoa/Problema VRPRDL/instancias_turco/VRPRDL-triangle/logs_vrp_convertidos/instance_3-triangle.log
+alpha_wait=0.0
+start_time=2026-04-20 13:20:31
+
+========================================
+Instância       : instance_3-triangle.txt
+JSON            : /mnt/c/Users/porin/OneDrive/Documentos/Python-Mestrado/Modelagem Matemática/Programação Inteira - Uchoa/Problema VRPRDL/instancias_turco/VRPRDL-triangle/json_convertidos/instance_3-triangle.json
+VRPSolver log   : /mnt/c/Users/porin/OneDrive/Documentos/Python-Mestrado/Modelagem Matemática/Programação Inteira - Uchoa/Problema VRPRDL/instancias_turco/VRPRDL-triangle/logs_vrp_convertidos/instance_3-triangle.log
+n_customers     : 15
+n_locations     : 51
+time_horizon    : 720
+capacity        : 750
+alpha_wait      : 0.0
+========================================
+[vrpsolver] backbones lidos: 1
+[pool] rotas do VRPSolver/variantes: 0
+[pool] singletons viáveis           : 15 / 15
+[pool] total inicial                : 15
+[cg] it=  1  LP=3672.0000  cols=15  new=0  rc_min=0.0000
+[cg] LP bound = 3672.0  |  resolvendo MIP com 15 colunas...
+========================================
+CG finalizado.
+status MIP      : OPTIMAL
+LP bound        : 3672.0
+MIP objetivo    : 3672.0
+veículos usados : 15
+tempo total     : 0.04 s
+========================================
+Rotas selecionadas:
+  Route #1  travel=  38  wait=  0  cost=38.00  demand=38
+      customers: 1
+      locations: 1
+  Route #2  travel= 158  wait=558  cost=158.00  demand=42
+      customers: 2
+      locations: 6
+  Route #3  travel=  28  wait=126  cost=28.00  demand=58
+      customers: 3
+      locations: 8
+  Route #4  travel=  12  wait=658  cost=12.00  demand=34
+      customers: 4
+      locations: 13
+  Route #5  travel= 412  wait= 50  cost=412.00  demand=49
+      customers: 5
+      locations: 15
+  Route #6  travel= 570  wait=106  cost=570.00  demand=55
+      customers: 6
+      locations: 20
+  Route #7  travel= 414  wait=  0  cost=414.00  demand=35
+      customers: 7
+      locations: 23
+  Route #8  travel= 160  wait=  0  cost=160.00  demand=48
+      customers: 8
+      locations: 24
+  Route #9  travel= 400  wait=272  cost=400.00  demand=39
+      customers: 9
+      locations: 28
+  Route #10  travel= 148  wait=238  cost=148.00  demand=61
+      customers: 10
+      locations: 32
+  Route #11  travel= 242  wait=  0  cost=242.00  demand=59
+      customers: 11
+      locations: 35
+  Route #12  travel=  56  wait=150  cost=56.00  demand=44
+      customers: 12
+      locations: 40
+  Route #13  travel= 266  wait=  0  cost=266.00  demand=56
+      customers: 13
+      locations: 44
+  Route #14  travel= 244  wait=141  cost=244.00  demand=71
+      customers: 14
+      locations: 46
+  Route #15  travel= 524  wait=  0  cost=524.00  demand=22
+      customers: 15
+      locations: 49
+
+end_time=2026-04-20 13:20:31

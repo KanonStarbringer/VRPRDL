@@ -1,0 +1,30 @@
+# Build (CMake / C++)
+vrprdl_cg/bg_bridge/build/
+*.o
+*.obj
+*.exe
+*.dll
+*.so
+*.dylib
+
+# Julia
+*.jl.cov
+*.jl.mem
+
+# Python
+__pycache__/
+*.py[cod]
+.Python
+venv/
+.venv/
+
+# OS / IDE
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+*.swp
+*~
+
+# Artefato local derivado do PDF (opcional; o PDF permanece versionado)
+ozbaygin2017.txt

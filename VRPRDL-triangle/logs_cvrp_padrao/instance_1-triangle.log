@@ -1,0 +1,284 @@
+instance_file=/mnt/c/Users/porin/OneDrive/Documentos/Python-Mestrado/Modelagem Matemática/Programação Inteira - Uchoa/Problema VRPRDL/instancias_turco/VRPRDL-triangle/cvrp_padrao_convertidos/instance_1-triangle.vrp
+instance_name=instance_1-triangle
+n_customers=15
+k_lb=1
+k_ub=15
+ub=1000000
+timeout_s=3600
+start_time=2026-04-22 10:46:41
+
+  Activating project at `~/VRPSolver/VRPSolverDemos`
+Application parameters:
+  batch  =>  nothing
+  instance  =>  "/mnt/c/Users/porin/OneDrive/Documentos/Python-Mestrado/Modelagem Matemática/Programação Inteira - Uchoa/Problema VRPRDL/instancias_turco/VRPRDL-triangle/cvrp_padrao_convertidos/instance_1-triangle.vrp"
+  noround  =>  false
+  cfg  =>  "/home/poringman/VRPSolver/VRPSolverDemos/src/../config/CVRP.cfg"
+  edge_cuts  =>  false
+  out  =>  nothing
+  ub  =>  1.0e6
+  cluster_branching  =>  1.0
+  sol  =>  nothing
+  single_resource  =>  false
+  strong_kpath_cuts  =>  false
+  tikz  =>  nothing
+  maxr  =>  15
+  update  =>  false
+  show_complete_form  =>  false
+  nosolve  =>  false
+  minr  =>  1
+  low_edge_priority  =>  false
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+GIT VERSION RCSP: 
+GIT BRANCH: 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+VRPSolver v0.6.16, 10/11/2025, © Inria Bordeaux, France, vrpsolver.math.u-bordeaux.fr
+      Corresponds to the solver by Pessoa, Sadykov, Uchoa and Vanderbeck (2020)
+                 Paper: dx.doi.org/10.1007/s10107-020-01523-z
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+GIT VERSION BAPCOD: a7cb21f19424236c9d0da5dcf94961797a519470
+GIT BRANCH: main
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   BaPCod v0.84, 10/11/2025, © Inria Bordeaux, France, bapcod.math.u-bordeaux.fr 
+           THIS CODE IS PROVIDED AS IS, USE IT AT YOUR OWN RISK
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+--- MAIN PARAMETERS ---
+GlobalTimeLimitInTick = 2147483645
+GlobalTimeLimit = 21474836
+ClockType = 0
+MaxNbOfBBtreeNodeTreated = 100000
+optimalityGapTolerance = 1e-06
+relOptimalityGapTolerance = 1e-09
+ApplyPreprocessing = false
+PreprocessVariablesLocalBounds = false
+treeSearchStrategy = 1
+OpenNodesLimit = 1000
+DEFAULTPRINTLEVEL = 0
+--- MIP SOLVER PARAMETERS ---
+solverName = CPLEX_SOLVER
+MipSolverMaxBBNodes = 2000000
+MipSolverMaxTime = 360000
+MipSolverMultiThread = 1
+--- COLUMN GENERATION PARAMETERS ---
+SolverSelectForMast = a
+  colGenSubProbSolMode = customSolver
+mastInitMode = localArtCol
+ArtVarPenaltyUpdateFactor = 2
+ArtVarMaxNbOfPenaltyUpdates = 5
+MaxNbOfStagesInColGenProcedure = 3
+GenerateProperColumns = false
+InsertAllGeneratedColumnsInFormRatherThanInPool = true
+InsertNewNonNegColumnsDirectlyInFormRatherThanInPool = true
+ColumnCleanupThreshold = 10000
+ColumnCleanupRatio = 0.66
+ReducedCostFixingThreshold = 0.9
+--- CUT GENERATION PARAMETERS ---
+MasterCuttingPlanesDepthLimit = 1000
+MaxNbOfCutGeneratedAtEachIter = 1000
+CutTailingOffThreshold = 0.015
+CutTailingOffCounterThreshold = 3
+CutCleanupThreshold = 1
+CutCleanupRatio = 0.66
+ColGenSpRelaxationImprovementPriority = 0
+--- STABILIZATION PARAMETERS ---
+colGenDualPriceSmoothingAlphaFactor = 1
+colGenDualPriceSmoothingBetaFactor = 0
+colGenStabilizationFunctionType = none
+colGenProximalStabilizationRule = undefined
+StabilFuncKappa = 1
+colGenStabilizationMaxTreeDepth = 10000
+StabilizationMinPhaseOfStage = 0
+--- PRIMAL HEURISTIC PARAMETERS ---
+UseInitialPrimalHeur = false
+MaxTimeForRestrictedMasterIpHeur = -1
+CallFrequencyOfRestrictedMasterIpHeur = 5
+MIPemphasisInRestrictedMasterIpHeur = 1
+PolishingAfterTimeInRestrictedMasterIpHeur = -1
+DivingHeurUseDepthLimit = -1
+CallFrequencyOfDivingHeur = 1
+LeastFractional
+Closest2RoundUp
+LeastGreedyCost
+LeastCost
+FixIntValBeforeRoundingHeur = true
+MaxNbOfCgIteDuringRh = 5000
+MaxLDSbreadth = 0
+MaxLDSdepth = 0
+DivingHeurStopsWithFirstFeasSol = false
+DivingHeurPreprocessBeforeChoosingVar = false
+StrongDivingCandidatesNumber = 1
+EvalAlgParamsInDiving = max#cand. = 1 max#cg.iters = 10000 min.lvl.sp.restr. = 1 min#cut.rounds = 0 max#cut.rounds = 0 red.cost.fix&enum. = false tree.size.ratio = 1
+LocalSearchHeurUseDepthLimit = -1
+LeastFractional
+Closest2RoundUp
+LeastGreedyCost
+LeastCost
+MaxFactorOfColFixedByLocalSearchHeur = 0.8
+MaxLocalSearchIterationCounter = 3
+--- STRONG BRANCHING PARAMETERS ---
+SimplifiedStrongBranchingParameterisation = true
+StrongBranchingPhaseOneCandidatesNumber = 100
+StrongBranchingPhaseOneTreeSizeEstimRatio = 0.2
+StrongBranchingPhaseTwoCandidatesNumber = 3
+StrongBranchingPhaseTwoTreeSizeEstimRatio = 0.02
+SafeDualBoundScaleFactor = -1
+StrongBranchingPhaseOne = max#cand. = 100 max#cg.iters = 0 min.lvl.sp.restr. = 0 min#cut.rounds = 0 max#cut.rounds = 0 red.cost.fix&enum. = false tree.size.ratio = 0.2
+StrongBranchingPhaseTwo = max#cand. = 3 max#cg.iters = 10000 min.lvl.sp.restr. = 1 min#cut.rounds = 0 max#cut.rounds = 0 red.cost.fix&enum. = false tree.size.ratio = 0.02
+StrongBranchingPhaseThree = max#cand. = 1 max#cg.iters = 10000 min.lvl.sp.restr. = 0 min#cut.rounds = 0 max#cut.rounds = 10000 red.cost.fix&enum. = true tree.size.ratio = 1
+StrongBranchingPhaseFour =not active
+--- DEBUG OUTPUT PARAMETERS ---
+printMasterPrimalSols = 0
+--- VRPSOLVER PARAMETERS ---
+RCSPstopCutGenTimeThresholdInPricing = 10
+RCSPhardTimeThresholdInPricing = 25
+RCSPredCostFixingTimeThreshold = 100
+RCSPnumberOfBucketsPerVertex = 25
+RCSPdynamicBucketSteps = 1
+RCSPuseBidirectionalSearch = 2
+RCSPapplyReducedCostFixing = 1
+RCSPmaxNumOfColsPerIteration = 30
+RCSPmaxNumOfColsPerExactIteration = 150
+RCSPmaxNumOfLabelsInEnumeration = 500000
+RCSPmaxNumOfLabelsInHeurEnumeration = 0
+RCSPmaxNumOfEnumeratedSolutions = 5000000
+RCSPmaxNumOfEnumSolutionsForMIP = 10000
+RCSPmaxNumOfEnumSolsForEndOfNodeMIP = 10000
+RCSPinitNGneighbourhoodSize = 8
+RCSPmaxNGneighbourhoodSize = 8
+RCSPrankOneCutsMaxNumRows = 5
+RCSPrankOneCutsMaxNumPerRound = 100
+RCSPrankOneCutsMemoryType = 0
+RCSPrankOneCutsLSnumIterations = 1000
+RCSPallowRoutesWithSameVerticesSet = true
+RCSPredCostFixingFalseGap = 0
+SafeDualBoundScaleFactor = -1
+RCSPmaxNumOfLabelsInHeurEnumeration = 0
+MaxNumEnumSolsInRestrictedMasterIpHeur = 5000
+
+prName & bcTimeMain \\ 
+New model incumbent solution 1e+06, TIME = 0h0m0s33t = 33
+RCSP solver info : size of non-robust cut bitmask in a label is 640 bits
+Bucket steps were recalculated for graph G_0 : [30]
+RCSP solver info : symmetric case is detected for graph G_0! 
+Bidirectional border value is initialised to 375
+RCSP solver info : number of forw. reachable buckets / buck. strongly connected components is 412( 93.2127% ) / 212( 51.4563% )
+RCSP solver info: std. label size is 56, ext. label size is 136
+Generating neighbourhoods for rank-1 cuts separation
+Building structures for 4- and 5-row rank-1 packing cut separation...done!
+Model is built TIME = 0h0m0s34t = 34
+************************************************************************************************
+**** BaB tree root node
+**** Local DB = -1e+12, global bounds : [ -1e+12 , 1e+06 ], TIME = 0h0m0s34t = 34
+**** 1 open nodes, 0 columns (0 active), 0 dyn. constrs. (0 active), 32 art. vars. (32 active)
+************************************************************************************************
+--------------------------------------------------------------------------
+BaPCod info : first we run the root node with rank-1 cuts with node memory
+--------------------------------------------------------------------------
+#<DWph=2> <it=  1> <et=0.34> <Mt= 0.00> <Spt= 0.00> <nCl= 15> <al=0.00> <DB=-1367926635.0000> <Mlp=37200000.0000> <PB=1000000> 
+#<DWph=2> <it=  2> <et=0.34> <Mt= 0.00> <Spt= 0.00> <nCl= 15> <al=0.55> <DB=-949473633.6300> <Mlp=29640460.1000> <PB=1000000> 
+#<DWph=2> <it=  3> <et=0.34> <Mt= 0.00> <Spt= 0.00> <nCl= 15> <al=0.45> <DB=-764536553.5298> <Mlp=28897451.6613> <PB=1000000> 
+#<DWph=2> <it=  4> <et=0.34> <Mt= 0.00> <Spt= 0.00> <nCl= 15> <al=0.35> <DB=-614021946.3946> <Mlp=23793340.5769> <PB=1000000> 
+#<DWph=2> <it=  5> <et=0.34> <Mt= 0.00> <Spt= 0.00> <nCl= 15> <al=0.42> <DB=-541486794.6549> <Mlp=18476292.7154> <PB=1000000> 
+#<DWph=2> <it=  6> <et=0.34> <Mt= 0.00> <Spt= 0.00> <nCl= 15> <al=0.47> <DB=-597082799.4077> <Mlp=14101630.4771> <PB=1000000> 
+#<DWph=2> <it=  7> <et=0.34> <Mt= 0.00> <Spt= 0.00> <nCl= 15> <al=0.53> <DB=-453144833.0662> <Mlp=12712892.2471> <PB=1000000> 
+#<DWph=2> <it=  8> <et=0.34> <Mt= 0.00> <Spt= 0.00> <nCl= 15> <al=0.57> <DB=-361039882.6253> <Mlp=9887298.9996> <PB=1000000> 
+#<DWph=2> <it=  9> <et=0.34> <Mt= 0.00> <Spt= 0.00> <nCl= 15> <al=0.47> <DB=-382939705.5960> <Mlp=6083219.1549> <PB=1000000> 
+#<DWph=2> <it= 10> <et=0.34> <Mt= 0.00> <Spt= 0.00> <nCl= 15> <al=0.53> <DB=-345643233.2799> <Mlp=3945290.4567> <PB=1000000> 
+#<DWph=2> <it= 11> <et=0.35> <Mt= 0.00> <Spt= 0.00> <nCl= 15> <al=0.43> <DB=-137613714.7446> <Mlp=76250.4045> <PB=1000000> 
+#<DWph=2> <it= 12> <et=0.35> <Mt= 0.00> <Spt= 0.00> <nCl= 16> <al=0.00> <DB=-1106957.9856> <Mlp=74395.1347> <PB=1000000> 
+<DWph=2> <it= 13> <et=0.35> <Mt= 0.00> <Spt= 0.00> <nCl= 15> <al=0.00> <DB=-21933.4838> <Mlp= 1434.0027> <PB=1000000> 
+<DWph=2> <it= 14> <et=0.35> <Mt= 0.00> <Spt= 0.00> <nCl= 15> <al=0.13> <DB=-13899.5112> <Mlp= 1209.0194> <PB=1000000> 
+<DWph=2> <it= 15> <et=0.35> <Mt= 0.00> <Spt= 0.00> <nCl= 15> <al=0.21> <DB=-14088.6432> <Mlp= 1006.0500> <PB=1000000> 
+<DWph=2> <it= 16> <et=0.35> <Mt= 0.00> <Spt= 0.00> <nCl= 15> <al=0.29> <DB=-9251.1314> <Mlp=  963.3861> <PB=1000000> 
+<DWph=2> <it= 17> <et=0.35> <Mt= 0.00> <Spt= 0.00> <nCl= 15> <al=0.36> <DB=-6318.3953> <Mlp=  918.7053> <PB=1000000> 
+<DWph=2> <it= 18> <et=0.35> <Mt= 0.00> <Spt= 0.00> <nCl= 15> <al=0.43> <DB=-3611.5522> <Mlp=  901.8822> <PB=1000000> 
+<DWph=2> <it= 19> <et=0.35> <Mt= 0.00> <Spt= 0.00> <nCl= 15> <al=0.33> <DB=-2973.0919> <Mlp=  886.0551> <PB=1000000> 
+<DWph=2> <it= 20> <et=0.35> <Mt= 0.00> <Spt= 0.01> <nCl= 15> <al=0.39> <DB=-2403.1379> <Mlp=  870.0582> <PB=1000000> 
+<DWph=2> <it= 21> <et=0.35> <Mt= 0.00> <Spt= 0.00> <nCl= 15> <al=0.45> <DB=-1984.8553> <Mlp=  834.8228> <PB=1000000> 
+Shrinking heuristic shrunk 13 edges
+<DWph=2> <it= 22> <et=0.35> <Mt= 0.00> <Spt= 0.00> <nCl= 15> <al=0.51> <DB=-2315.3069> <Mlp=  731.0000> <PB=731> 
+<DWph=2> <it= 23> <et=0.35> <Mt= 0.00> <Spt= 0.00> <nCl= 15> <al=0.56> <DB=-1391.2698> <Mlp=  731.0000> <PB=731> 
+<DWph=2> <it= 24> <et=0.35> <Mt= 0.00> <Spt= 0.00> <nCl= 15> <al=0.60> <DB=-2309.4681> <Mlp=  731.0000> <PB=731> 
+<DWph=2> <it= 25> <et=0.36> <Mt= 0.00> <Spt= 0.00> <nCl= 15> <al=0.64> <DB= -762.7291> <Mlp=  731.0000> <PB=731> 
+<DWph=2> <it= 26> <et=0.36> <Mt= 0.00> <Spt= 0.00> <nCl= 15> <al=0.54> <DB=-1545.5444> <Mlp=  731.0000> <PB=731> 
+<DWph=2> <it= 27> <et=0.36> <Mt= 0.00> <Spt= 0.00> <nCl= 15> <al=0.59> <DB= -591.5572> <Mlp=  731.0000> <PB=731> 
+<DWph=2> <it= 28> <et=0.36> <Mt= 0.00> <Spt= 0.00> <nCl= 15> <al=0.63> <DB= -178.2129> <Mlp=  731.0000> <PB=731> 
+<DWph=2> <it= 29> <et=0.36> <Mt= 0.00> <Spt= 0.00> <nCl= 15> <al=0.53> <DB= -882.6969> <Mlp=  731.0000> <PB=731> 
+<DWph=2> <it= 30> <et=0.36> <Mt= 0.00> <Spt= 0.00> <nCl= 15> <al=0.58> <DB= -396.3288> <Mlp=  731.0000> <PB=731> 
+<DWph=2> <it= 31> <et=0.36> <Mt= 0.00> <Spt= 0.00> <nCl= 15> <al=0.62> <DB= -354.4201> <Mlp=  731.0000> <PB=731> 
+<DWph=2> <it= 32> <et=0.36> <Mt= 0.00> <Spt= 0.00> <nCl= 15> <al=0.66> <DB= -123.0148> <Mlp=  731.0000> <PB=731> 
+<DWph=2> <it= 33> <et=0.36> <Mt= 0.00> <Spt= 0.00> <nCl= 15> <al=0.69> <DB= -130.5941> <Mlp=  727.0000> <PB=731> 
+<DWph=2> <it= 34> <et=0.36> <Mt= 0.00> <Spt= 0.00> <nCl= 10> <al=0.72> <DB=  116.0125> <Mlp=  727.0000> <PB=731> 
+<DWph=2> <it= 35> <et=0.36> <Mt= 0.00> <Spt= 0.00> <nCl= 15> <al=0.62> <DB=  295.1547> <Mlp=  719.5000> <PB=731> 
+<DWph=2> <it= 36> <et=0.36> <Mt= 0.00> <Spt= 0.00> <nCl= 15> <al=0.52> <DB= -128.5044> <Mlp=  719.5000> <PB=731> 
+<DWph=2> <it= 37> <et=0.36> <Mt= 0.00> <Spt= 0.00> <nCl= 15> <al=0.57> <DB=   36.9875> <Mlp=  719.5000> <PB=731> 
+<DWph=2> <it= 38> <et=0.37> <Mt= 0.00> <Spt= 0.00> <nCl= 15> <al=0.61> <DB=  226.3133> <Mlp=  719.5000> <PB=731> 
+<DWph=2> <it= 39> <et=0.37> <Mt= 0.00> <Spt= 0.00> <nCl= 15> <al=0.65> <DB=  499.9093> <Mlp=  719.5000> <PB=731> 
+<DWph=2> <it= 40> <et=0.37> <Mt= 0.00> <Spt= 0.01> <nCl= 15> <al=0.55> <DB=  373.9614> <Mlp=  719.5000> <PB=731> 
+<DWph=2> <it= 41> <et=0.37> <Mt= 0.00> <Spt= 0.00> <nCl= 15> <al=0.60> <DB=  513.0456> <Mlp=  719.5000> <PB=731> 
+<DWph=2> <it= 42> <et=0.37> <Mt= 0.00> <Spt= 0.00> <nCl= 15> <al=0.50> <DB=   61.0282> <Mlp=  719.5000> <PB=731> 
+<DWph=2> <it= 43> <et=0.37> <Mt= 0.00> <Spt= 0.00> <nCl= 15> <al=0.55> <DB=  136.8015> <Mlp=  719.5000> <PB=731> 
+<DWph=2> <it= 44> <et=0.37> <Mt= 0.00> <Spt= 0.00> <nCl= 15> <al=0.59> <DB=  474.3916> <Mlp=  719.5000> <PB=731> 
+<DWph=2> <it= 45> <et=0.37> <Mt= 0.01> <Spt= 0.00> <nCl= 15> <al=0.63> <DB=  418.9741> <Mlp=  719.5000> <PB=731> 
+<DWph=2> <it= 46> <et=0.37> <Mt= 0.00> <Spt= 0.00> <nCl= 15> <al=0.67> <DB=  574.9084> <Mlp=  719.5000> <PB=731> 
+<DWph=2> <it= 47> <et=0.37> <Mt= 0.00> <Spt= 0.00> <nCl= 21> <al=0.41> <DB=  653.9390> <Mlp=  719.5000> <PB=731> 
+<DWph=2> <it= 48> <et=0.37> <Mt= 0.00> <Spt= 0.00> <nCl=  9> <al=0.60> <DB=  679.3776> <Mlp=  719.5000> <PB=731> 
+<DWph=2> <it= 49> <et=0.37> <Mt= 0.00> <Spt= 0.00> <nCl=  2> <al=0.64> <DB=  649.7726> <Mlp=  719.5000> <PB=731> 
+<DWph=2> <it= 50> <et=0.38> <Mt= 0.00> <Spt= 0.00> <nCl=  8> <al=0.54> <DB=  658.3208> <Mlp=  717.5000> <PB=731> 
+<DWph=2> <it= 51> <et=0.38> <Mt= 0.00> <Spt= 0.00> <nCl=  4> <al=0.18> <DB=  636.9142> <Mlp=  717.5000> <PB=731> 
+<DWph=2> <it= 52> <et=0.38> <Mt= 0.00> <Spt= 0.00> <nCl=  9> <al=0.00> <DB=  675.5000> <Mlp=  717.5000> <PB=731> 
+<DWph=2> <it= 53> <et=0.38> <Mt= 0.00> <Spt= 0.00> <nCl=  4> <al=0.39> <DB=  695.9060> <Mlp=  717.5000> <PB=731> 
+<DWph=2> <it= 54> <et=0.38> <Mt= 0.00> <Spt= 0.00> <nCl= 15> <al=0.45> <DB=  444.4562> <Mlp=  717.5000> <PB=731> 
+<DWph=2> <it= 55> <et=0.38> <Mt= 0.00> <Spt= 0.00> <nCl=  9> <al=0.35> <DB=  651.9481> <Mlp=  717.5000> <PB=731> 
+<DWph=2> <it= 56> <et=0.38> <Mt= 0.00> <Spt= 0.00> <nCl= 13> <al=0.41> <DB=  549.3281> <Mlp=  717.5000> <PB=731> 
+<DWph=2> <it= 57> <et=0.38> <Mt= 0.00> <Spt= 0.00> <nCl= 15> <al=0.31> <DB=  650.4180> <Mlp=  714.3333> <PB=731> 
+<DWph=2> <it= 58> <et=0.38> <Mt= 0.00> <Spt= 0.01> <nCl=  5> <al=0.38> <DB=  696.2334> <Mlp=  714.3333> <PB=731> 
+<DWph=2> <it= 59> <et=0.38> <Mt= 0.00> <Spt= 0.00> <nCl= 13> <al=0.44> <DB=  645.4477> <Mlp=  714.3333> <PB=731> 
+<DWph=2> <it= 60> <et=0.38> <Mt= 0.00> <Spt= 0.00> <nCl=  9> <al=0.50> <DB=  656.8268> <Mlp=  714.3333> <PB=731> 
+<DWph=2> <it= 61> <et=0.38> <Mt= 0.00> <Spt= 0.00> <nCl= 12> <al=0.55> <DB=  683.7814> <Mlp=  714.3333> <PB=731> 
+<DWph=2> <it= 62> <et=0.39> <Mt= 0.00> <Spt= 0.00> <nCl=  2> <al=0.60> <DB=  703.6325> <Mlp=  714.3333> <PB=731> 
+<DWph=2> <it= 63> <et=0.39> <Mt= 0.00> <Spt= 0.00> <nCl= 15> <al=0.27> <DB=  699.9457> <Mlp=  714.3333> <PB=731> 
+<DWph=2> <it= 64> <et=0.39> <Mt= 0.00> <Spt= 0.00> <nCl= 17> <al=0.07> <DB=  611.6736> <Mlp=  714.3333> <PB=731> 
+<DWph=2> <it= 65> <et=0.39> <Mt= 0.00> <Spt= 0.00> <nCl= 15> <al=0.44> <DB=  579.2089> <Mlp=  714.3333> <PB=731> 
+<DWph=2> <it= 66> <et=0.39> <Mt= 0.00> <Spt= 0.00> <nCl= 16> <al=0.00> <DB=  615.9679> <Mlp=  714.3333> <PB=731> 
+<DWph=1> <it= 67> <et=0.39> <Mt= 0.00> <Spt= 0.00> <nCl= 15> <al=0.39> <DB=  452.9385> <Mlp=  714.3333> <PB=731> 
+<DWph=1> <it= 68> <et=0.39> <Mt= 0.00> <Spt= 0.00> <nCl= 15> <al=0.29> <DB=  431.8201> <Mlp=  714.3333> <PB=731> 
+<DWph=1> <it= 69> <et=0.39> <Mt= 0.00> <Spt= 0.00> <nCl= 15> <al=0.36> <DB=  585.8187> <Mlp=  714.3333> <PB=731> 
+<DWph=1> <it= 70> <et=0.39> <Mt= 0.00> <Spt= 0.00> <nCl= 10> <al=0.26> <DB=  651.9070> <Mlp=  714.3333> <PB=731> 
+<DWph=1> <it= 71> <et=0.40> <Mt= 0.00> <Spt= 0.00> <nCl= 15> <al=0.16> <DB=  455.7814> <Mlp=  714.3333> <PB=731> 
+<DWph=1> <it= 72> <et=0.40> <Mt= 0.00> <Spt= 0.01> <nCl= 13> <al=0.25> <DB=  647.1977> <Mlp=  714.3333> <PB=731> 
+<DWph=1> <it= 73> <et=0.40> <Mt= 0.00> <Spt= 0.00> <nCl= 15> <al=0.32> <DB=  561.7301> <Mlp=  714.3333> <PB=731> 
+<DWph=1> <it= 74> <et=0.40> <Mt= 0.00> <Spt= 0.00> <nCl= 21> <al=0.00> <DB=  687.1905> <Mlp=  714.3333> <PB=731> 
+<DWph=1> <it= 75> <et=0.40> <Mt= 0.00> <Spt= 0.00> <nCl=  5> <al=0.29> <DB=  664.9273> <Mlp=  714.3333> <PB=731> 
+<DWph=1> <it= 76> <et=0.40> <Mt= 0.00> <Spt= 0.00> <nCl= 13> <al=0.19> <DB=  630.2526> <Mlp=  714.3333> <PB=731> 
+<DWph=1> <it= 77> <et=0.40> <Mt= 0.00> <Spt= 0.00> <nCl=  9> <al=0.27> <DB=  693.6522> <Mlp=  714.3333> <PB=731> 
+<DWph=1> <it= 78> <et=0.40> <Mt= 0.00> <Spt= 0.00> <nCl= 10> <al=0.00> <DB=  714.3333> <Mlp=  714.3333> <PB=731> 
+    RCSP exact solver info for graph G_0 : TT = 0.001355, pt = 3e-06, dt = 0.000985, ct = 0.000148, ndl = 715', bdl = 4638', odl = 1824', odf = 12425', bsi = 1091', cnt = 4064', bdch = 55202', odch = 23967', lcp = 13212', #sols = 150
+<DWph=0> <it= 79> <et=0.41> <Mt= 0.00> <Spt= 0.00> <nCl=141> <al=0.24> <DB=  514.3309> <Mlp=  714.3333> <PB=731> 
+Shrinking heuristic shrunk 14 edges
+    RCSP exact solver info for graph G_0 : TT = 0.00139, pt = 1.4e-05, dt = 0.000988, ct = 0.000158, ndl = 805', bdl = 5235', odl = 1714', odf = 11698', bsi = 1237', cnt = 5600', bdch = 61230', odch = 24616', lcp = 13277', #sols = 150
+<DWph=0> <it= 80> <et=0.41> <Mt= 0.00> <Spt= 0.01> <nCl=101> <al=0.14> <DB=  676.7463> <Mlp=  704.0000> <PB=704> 
+    RCSP exact solver info for graph G_0 : TT = 0.001388, pt = 1.3e-05, dt = 0.000992, ct = 0.000144, ndl = 791', bdl = 5072', odl = 1741', odf = 11595', bsi = 1083', cnt = 6745', bdch = 59692', odch = 26271', lcp = 13241', #sols = 150
+<DWph=0> <it= 81> <et=0.42> <Mt= 0.00> <Spt= 0.00> <nCl= 76> <al=0.23> <DB=  665.1975> <Mlp=  704.0000> <PB=704> 
+    RCSP exact solver info for graph G_0 : TT = 0.001167, pt = 1.1e-05, dt = 0.000751, ct = 0.000141, ndl = 666', bdl = 4242', odl = 1628', odf = 10630', bsi = 1041', cnt = 5349', bdch = 45465', odch = 19836', lcp = 9837', #sols = 150
+    RCSP exact solver info for graph G_0 : TT = 0.001117, pt = 1e-05, dt = 0.000708, ct = 0.000111, ndl = 586', bdl = 3748', odl = 1574', odf = 9826', bsi = 901', cnt = 4043', bdch = 38352', odch = 17025', lcp = 8146', #sols = 150
+<DWph=0> <it= 82> <et=0.42> <Mt= 0.00> <Spt= 0.01> <nCl=130> <al=0.00> <DB=  674.0000> <Mlp=  704.0000> <PB=704> 
+    RCSP exact solver info for graph G_0 : TT = 0.00119, pt = 9e-06, dt = 0.000824, ct = 0.000126, ndl = 698', bdl = 4489', odl = 1663', odf = 10741', bsi = 1052', cnt = 5903', bdch = 49658', odch = 21247', lcp = 10534', #sols = 150
+    RCSP exact solver info for graph G_0 : TT = 0.001327, pt = 1e-05, dt = 0.000719, ct = 0.000115, ndl = 587', bdl = 3751', odl = 1573', odf = 9798', bsi = 874', cnt = 3875', bdch = 38184', odch = 16958', lcp = 8148', #sols = 150
+<DWph=0> <it= 83> <et=0.43> <Mt= 0.00> <Spt= 0.00> <nCl= 15> <al=0.00> <DB=  704.0000> <Mlp=  704.0000> <PB=704> 
+RCSP solver dynamic params and stats :  bidir.bord. = 375 aver.obdmd = 23.2941 aver.buck.num. = 26
+@@ 1 0 704 0.000987143 0.001146 92.5043 0.43
+ColGenEvalAlg final dual bound: 704 (rounded: 704)
+New model incumbent solution 704, TIME = 0h0m0s43t = 43
+************************************************************************************************
+Search is finished, global bounds : [ 704 , 704 ], TIME = 0h0m0s43t = 43
+************************************************************************************************
+[32mBaPCod : solution defined.[00m
+statistics_cols: instance & :Optimal & cutoff & :bcRecRootDb & :bcTimeRootEval & :bcCountNodeProc & :bcRecBestDb & :bcRecBestInc & :bcTimeMain \\
+statistics: instance_1-triangle & 1 & 1.0e6 & 704.00 & 0.43 & 1 & 704.00 & 704 & 0.43 \\
+########################################################
+Route #1: 9 3 4 5 8 10 7 1 12 14 13 11 6 2 15 
+Cost 704
+########################################################
+
+end_time=2026-04-22 10:46:51
+exit_code=0

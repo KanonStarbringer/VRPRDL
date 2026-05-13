@@ -1,0 +1,44 @@
+NAME : instance_1-triangle
+COMMENT : VRPRDL projected to CVRP (closest location per customer; total_demand=680, k_lb=1)
+TYPE : CVRP
+DIMENSION : 16
+EDGE_WEIGHT_TYPE : EUC_2D 
+CAPACITY : 750
+NODE_COORD_SECTION 
+ 1 0 0
+ 2 -83 42
+ 3 57 -79
+ 4 36 19
+ 5 52 34
+ 6 -12 63
+ 7 5 -84
+ 8 -116 92
+ 9 -36 48
+ 10 9 8
+ 11 -53 63
+ 12 -17 -22
+ 13 -89 11
+ 14 -39 -10
+ 15 -99 -39
+ 16 2 -9
+DEMAND_SECTION 
+1 0 
+2 69 
+3 18 
+4 38 
+5 37 
+6 71 
+7 63 
+8 30 
+9 50 
+10 48 
+11 48 
+12 19 
+13 41 
+14 75 
+15 11 
+16 62 
+DEPOT_SECTION 
+ 1  
+ -1  
+EOF 

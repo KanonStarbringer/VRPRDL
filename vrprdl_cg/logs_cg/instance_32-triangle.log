@@ -1,0 +1,368 @@
+instance_json=/mnt/c/Users/porin/OneDrive/Documentos/Python-Mestrado/Modelagem Matemática/Programação Inteira - Uchoa/Problema VRPRDL/instancias_turco/VRPRDL-triangle/json_convertidos/instance_32-triangle.json
+instance_log=/mnt/c/Users/porin/OneDrive/Documentos/Python-Mestrado/Modelagem Matemática/Programação Inteira - Uchoa/Problema VRPRDL/instancias_turco/VRPRDL-triangle/logs_vrp_convertidos/instance_32-triangle.log
+alpha_wait=0.0
+start_time=2026-04-20 13:20:33
+
+========================================
+Instância       : instance_32-triangle.txt
+JSON            : /mnt/c/Users/porin/OneDrive/Documentos/Python-Mestrado/Modelagem Matemática/Programação Inteira - Uchoa/Problema VRPRDL/instancias_turco/VRPRDL-triangle/json_convertidos/instance_32-triangle.json
+VRPSolver log   : /mnt/c/Users/porin/OneDrive/Documentos/Python-Mestrado/Modelagem Matemática/Programação Inteira - Uchoa/Problema VRPRDL/instancias_turco/VRPRDL-triangle/logs_vrp_convertidos/instance_32-triangle.log
+n_customers     : 120
+n_locations     : 472
+time_horizon    : 720
+capacity        : 750
+alpha_wait      : 0.0
+========================================
+[vrpsolver] backbones lidos: 9
+[pool] rotas do VRPSolver/variantes: 2
+[pool] singletons viáveis           : 120 / 120
+[pool] total inicial                : 122
+[cg] it=  1  LP=31569.0000  cols=122  new=0  rc_min=0.0000
+[cg] LP bound = 31569.0  |  resolvendo MIP com 122 colunas...
+========================================
+CG finalizado.
+status MIP      : OPTIMAL
+LP bound        : 31569.0
+MIP objetivo    : 31569.0
+veículos usados : 112
+tempo total     : 1.27 s
+========================================
+Rotas selecionadas:
+  Route #1  travel= 499  wait=214  cost=499.00  demand=517
+      customers: 68 98 120 34 22 97 37 93 90
+      locations: 251 373 468 117 82 372 130 359 347
+  Route #2  travel= 512  wait=  0  cost=512.00  demand=44
+      customers: 1
+      locations: 1
+  Route #3  travel= 100  wait=  0  cost=100.00  demand=69
+      customers: 2
+      locations: 2
+  Route #4  travel= 398  wait=184  cost=398.00  demand=45
+      customers: 3
+      locations: 6
+  Route #5  travel= 296  wait=278  cost=296.00  demand=59
+      customers: 4
+      locations: 11
+  Route #6  travel= 146  wait= 52  cost=146.00  demand=44
+      customers: 5
+      locations: 15
+  Route #7  travel= 248  wait=195  cost=248.00  demand=67
+      customers: 6
+      locations: 22
+  Route #8  travel= 330  wait=219  cost=330.00  demand=51
+      customers: 7
+      locations: 28
+  Route #9  travel= 324  wait=171  cost=324.00  demand=70
+      customers: 8
+      locations: 33
+  Route #10  travel= 128  wait=224  cost=128.00  demand=59
+      customers: 9
+      locations: 37
+  Route #11  travel=  64  wait=436  cost=64.00  demand=46
+      customers: 10
+      locations: 43
+  Route #12  travel= 258  wait= 14  cost=258.00  demand=83
+      customers: 11
+      locations: 47
+  Route #13  travel= 524  wait=  0  cost=524.00  demand=53
+      customers: 12
+      locations: 49
+  Route #14  travel= 446  wait= 30  cost=446.00  demand=44
+      customers: 13
+      locations: 52
+  Route #15  travel= 254  wait=331  cost=254.00  demand=36
+      customers: 14
+      locations: 58
+  Route #16  travel= 128  wait=  0  cost=128.00  demand=60
+      customers: 15
+      locations: 60
+  Route #17  travel= 252  wait=  0  cost=252.00  demand=61
+      customers: 16
+      locations: 61
+  Route #18  travel= 432  wait=183  cost=432.00  demand=64
+      customers: 17
+      locations: 65
+  Route #19  travel= 372  wait=  0  cost=372.00  demand=34
+      customers: 18
+      locations: 68
+  Route #20  travel= 144  wait= 39  cost=144.00  demand=60
+      customers: 19
+      locations: 70
+  Route #21  travel= 292  wait=200  cost=292.00  demand=53
+      customers: 20
+      locations: 74
+  Route #22  travel=  52  wait=  0  cost=52.00  demand=45
+      customers: 21
+      locations: 78
+  Route #23  travel= 716  wait=  0  cost=716.00  demand=32
+      customers: 23
+      locations: 85
+  Route #24  travel=  94  wait=  0  cost=94.00  demand=32
+      customers: 24
+      locations: 86
+  Route #25  travel= 116  wait= 69  cost=116.00  demand=42
+      customers: 25
+      locations: 88
+  Route #26  travel= 402  wait= 14  cost=402.00  demand=68
+      customers: 26
+      locations: 93
+  Route #27  travel=  46  wait=  0  cost=46.00  demand=38
+      customers: 27
+      locations: 95
+  Route #28  travel=  24  wait=431  cost=24.00  demand=41
+      customers: 28
+      locations: 99
+  Route #29  travel= 208  wait=389  cost=208.00  demand=62
+      customers: 29
+      locations: 105
+  Route #30  travel= 254  wait=199  cost=254.00  demand=54
+      customers: 30
+      locations: 109
+  Route #31  travel= 306  wait=  0  cost=306.00  demand=66
+      customers: 31
+      locations: 110
+  Route #32  travel= 350  wait= 40  cost=350.00  demand=53
+      customers: 32
+      locations: 113
+  Route #33  travel= 436  wait=  0  cost=436.00  demand=61
+      customers: 33
+      locations: 116
+  Route #34  travel= 698  wait=  4  cost=698.00  demand=75
+      customers: 35
+      locations: 123
+  Route #35  travel= 208  wait=  0  cost=208.00  demand=58
+      customers: 36
+      locations: 126
+  Route #36  travel= 488  wait=111  cost=488.00  demand=60
+      customers: 38
+      locations: 133
+  Route #37  travel= 100  wait=494  cost=100.00  demand=34
+      customers: 39
+      locations: 140
+  Route #38  travel= 646  wait=  0  cost=646.00  demand=66
+      customers: 40
+      locations: 143
+  Route #39  travel= 310  wait= 15  cost=310.00  demand=56
+      customers: 41
+      locations: 146
+  Route #40  travel= 284  wait=125  cost=284.00  demand=42
+      customers: 42
+      locations: 152
+  Route #41  travel= 124  wait= 40  cost=124.00  demand=62
+      customers: 43
+      locations: 156
+  Route #42  travel= 430  wait=  0  cost=430.00  demand=57
+      customers: 44
+      locations: 162
+  Route #43  travel= 188  wait=479  cost=188.00  demand=60
+      customers: 45
+      locations: 170
+  Route #44  travel=  98  wait=  0  cost=98.00  demand=32
+      customers: 46
+      locations: 171
+  Route #45  travel=  64  wait=379  cost=64.00  demand=49
+      customers: 47
+      locations: 178
+  Route #46  travel= 274  wait= 13  cost=274.00  demand=61
+      customers: 48
+      locations: 182
+  Route #47  travel= 100  wait=589  cost=100.00  demand=56
+      customers: 49
+      locations: 189
+  Route #48  travel=  40  wait=  0  cost=40.00  demand=38
+      customers: 50
+      locations: 190
+  Route #49  travel= 716  wait=  0  cost=716.00  demand=49
+      customers: 51
+      locations: 193
+  Route #50  travel= 444  wait=121  cost=444.00  demand=50
+      customers: 52
+      locations: 196
+  Route #51  travel=  84  wait=  0  cost=84.00  demand=55
+      customers: 53
+      locations: 198
+  Route #52  travel= 192  wait=252  cost=192.00  demand=67
+      customers: 54
+      locations: 201
+  Route #53  travel= 110  wait=589  cost=110.00  demand=60
+      customers: 55
+      locations: 209
+  Route #54  travel= 594  wait=  2  cost=594.00  demand=41
+      customers: 56
+      locations: 212
+  Route #55  travel= 158  wait=133  cost=158.00  demand=39
+      customers: 57
+      locations: 217
+  Route #56  travel= 182  wait=439  cost=182.00  demand=43
+      customers: 58
+      locations: 223
+  Route #57  travel= 332  wait=264  cost=332.00  demand=44
+      customers: 59
+      locations: 228
+  Route #58  travel= 560  wait=  0  cost=560.00  demand=36
+      customers: 60
+      locations: 231
+  Route #59  travel= 200  wait=  0  cost=200.00  demand=57
+      customers: 61
+      locations: 232
+  Route #60  travel=  46  wait=630  cost=46.00  demand=79
+      customers: 62
+      locations: 238
+  Route #61  travel= 104  wait=  0  cost=104.00  demand=53
+      customers: 63
+      locations: 239
+  Route #62  travel= 242  wait=  0  cost=242.00  demand=28
+      customers: 64
+      locations: 240
+  Route #63  travel= 566  wait=  0  cost=566.00  demand=36
+      customers: 65
+      locations: 243
+  Route #64  travel= 336  wait=  0  cost=336.00  demand=47
+      customers: 66
+      locations: 246
+  Route #65  travel= 250  wait=  0  cost=250.00  demand=88
+      customers: 67
+      locations: 250
+  Route #66  travel= 112  wait=  0  cost=112.00  demand=28
+      customers: 69
+      locations: 256
+  Route #67  travel= 410  wait=242  cost=410.00  demand=57
+      customers: 70
+      locations: 263
+  Route #68  travel= 338  wait=350  cost=338.00  demand=45
+      customers: 71
+      locations: 267
+  Route #69  travel=  86  wait=246  cost=86.00  demand=40
+      customers: 72
+      locations: 272
+  Route #70  travel= 176  wait=413  cost=176.00  demand=68
+      customers: 73
+      locations: 280
+  Route #71  travel= 512  wait= 89  cost=512.00  demand=48
+      customers: 74
+      locations: 283
+  Route #72  travel= 366  wait=  0  cost=366.00  demand=47
+      customers: 75
+      locations: 287
+  Route #73  travel= 640  wait= 29  cost=640.00  demand=62
+      customers: 76
+      locations: 289
+  Route #74  travel= 306  wait=363  cost=306.00  demand=77
+      customers: 77
+      locations: 294
+  Route #75  travel= 118  wait=  0  cost=118.00  demand=34
+      customers: 78
+      locations: 296
+  Route #76  travel=  78  wait=572  cost=78.00  demand=42
+      customers: 79
+      locations: 301
+  Route #77  travel= 138  wait=490  cost=138.00  demand=71
+      customers: 80
+      locations: 305
+  Route #78  travel= 280  wait=  0  cost=280.00  demand=61
+      customers: 81
+      locations: 307
+  Route #79  travel= 402  wait=269  cost=402.00  demand=54
+      customers: 82
+      locations: 313
+  Route #80  travel= 388  wait=289  cost=388.00  demand=62
+      customers: 83
+      locations: 318
+  Route #81  travel=  74  wait=399  cost=74.00  demand=77
+      customers: 84
+      locations: 322
+  Route #82  travel= 174  wait=  0  cost=174.00  demand=58
+      customers: 85
+      locations: 325
+  Route #83  travel= 132  wait= 72  cost=132.00  demand=40
+      customers: 86
+      locations: 329
+  Route #84  travel= 112  wait=340  cost=112.00  demand=20
+      customers: 87
+      locations: 337
+  Route #85  travel= 712  wait=  0  cost=712.00  demand=49
+      customers: 88
+      locations: 340
+  Route #86  travel= 652  wait=  0  cost=652.00  demand=41
+      customers: 89
+      locations: 341
+  Route #87  travel= 630  wait=  0  cost=630.00  demand=52
+      customers: 91
+      locations: 348
+  Route #88  travel= 128  wait=  0  cost=128.00  demand=45
+      customers: 92
+      locations: 349
+  Route #89  travel= 520  wait= 28  cost=520.00  demand=83
+      customers: 94
+      locations: 362
+  Route #90  travel= 544  wait=  0  cost=544.00  demand=60
+      customers: 95
+      locations: 364
+  Route #91  travel= 178  wait=  0  cost=178.00  demand=31
+      customers: 96
+      locations: 367
+  Route #92  travel=  82  wait=  0  cost=82.00  demand=27
+      customers: 99
+      locations: 377
+  Route #93  travel= 104  wait=  8  cost=104.00  demand=36
+      customers: 100
+      locations: 382
+  Route #94  travel=  92  wait=157  cost=92.00  demand=45
+      customers: 101
+      locations: 389
+  Route #95  travel= 174  wait=197  cost=174.00  demand=41
+      customers: 102
+      locations: 394
+  Route #96  travel= 244  wait=225  cost=244.00  demand=49
+      customers: 103
+      locations: 399
+  Route #97  travel= 390  wait=162  cost=390.00  demand=27
+      customers: 104
+      locations: 405
+  Route #98  travel= 656  wait= 17  cost=656.00  demand=69
+      customers: 105
+      locations: 409
+  Route #99  travel=  88  wait=  0  cost=88.00  demand=62
+      customers: 106
+      locations: 411
+  Route #100  travel= 524  wait=177  cost=524.00  demand=84
+      customers: 107
+      locations: 418
+  Route #101  travel=  98  wait=531  cost=98.00  demand=50
+      customers: 108
+      locations: 424
+  Route #102  travel= 126  wait=110  cost=126.00  demand=46
+      customers: 109
+      locations: 426
+  Route #103  travel= 174  wait=387  cost=174.00  demand=55
+      customers: 110
+      locations: 431
+  Route #104  travel=  46  wait=  0  cost=46.00  demand=36
+      customers: 111
+      locations: 432
+  Route #105  travel= 170  wait=  0  cost=170.00  demand=43
+      customers: 112
+      locations: 437
+  Route #106  travel= 216  wait=462  cost=216.00  demand=73
+      customers: 113
+      locations: 442
+  Route #107  travel= 490  wait= 58  cost=490.00  demand=35
+      customers: 114
+      locations: 446
+  Route #108  travel= 298  wait=411  cost=298.00  demand=35
+      customers: 115
+      locations: 451
+  Route #109  travel=  32  wait=  0  cost=32.00  demand=63
+      customers: 116
+      locations: 453
+  Route #110  travel= 480  wait=  0  cost=480.00  demand=48
+      customers: 117
+      locations: 458
+  Route #111  travel= 532  wait= 69  cost=532.00  demand=60
+      customers: 118
+      locations: 462
+  Route #112  travel=  28  wait=662  cost=28.00  demand=48
+      customers: 119
+      locations: 466
+
+end_time=2026-04-20 13:20:35

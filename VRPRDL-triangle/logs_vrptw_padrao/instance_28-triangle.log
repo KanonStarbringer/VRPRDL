@@ -1,0 +1,112 @@
+instance_file=/mnt/c/Users/porin/OneDrive/Documentos/Python-Mestrado/Modelagem Matemática/Programação Inteira - Uchoa/Problema VRPRDL/instancias_turco/VRPRDL-triangle/vrptw_padrao_convertidos/instance_28-triangle.txt
+instance_name=instance_28-triangle
+n_customers=60
+capacity=750
+k_ub=60
+time_horizon=720
+ub_mode=trivial
+ub_used=11337.0
+cfg=config/VRPTW_set_1.cfg
+timeout_s=3600
+start_time=2026-04-22 11:33:19
+cmd=/home/poringman/.juliaup/bin/julia src/run.jl /mnt/c/Users/porin/OneDrive/Documentos/Python-Mestrado/Modelagem Matemática/Programação Inteira - Uchoa/Problema VRPRDL/instancias_turco/VRPRDL-triangle/vrptw_padrao_convertidos/instance_28-triangle.txt --cfg config/VRPTW_set_1.cfg -u 11337.0
+
+  Activating project at `~/VRPSolver/VRPSolverDemos/other/VRPTW`
+Application parameters:
+  batch  =>  nothing
+  update  =>  false
+  tikz  =>  nothing
+  instance  =>  "/mnt/c/Users/porin/OneDrive/Documentos/Python-Mestrado/Modelagem Matemática/Programação Inteira - Uchoa/Problema VRPRDL/instancias_turco/VRPRDL-triangle/vrptw_padrao_convertidos/instance_28-triangle.txt"
+  out  =>  nothing
+  nosolve  =>  false
+  ub  =>  11337.0
+  sol  =>  nothing
+  cfg  =>  "config/VRPTW_set_1.cfg"
+  enable_cap_res  =>  false
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+GIT VERSION RCSP: 
+GIT BRANCH: 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+VRPSolver v0.6.16, 10/11/2025, © Inria Bordeaux, France, vrpsolver.math.u-bordeaux.fr
+      Corresponds to the solver by Pessoa, Sadykov, Uchoa and Vanderbeck (2020)
+                 Paper: dx.doi.org/10.1007/s10107-020-01523-z
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+GIT VERSION BAPCOD: a7cb21f19424236c9d0da5dcf94961797a519470
+GIT BRANCH: main
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   BaPCod v0.84, 10/11/2025, © Inria Bordeaux, France, bapcod.math.u-bordeaux.fr 
+           THIS CODE IS PROVIDED AS IS, USE IT AT YOUR OWN RISK
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+--- VRPSOLVER PARAMETERS ---
+GlobalTimeLimit = 21474836
+MaxNbOfBBtreeNodeTreated = 100000
+treeSearchStrategy = 1
+RCSPstopCutGenTimeThresholdInPricing = 5
+RCSPhardTimeThresholdInPricing = 10
+RCSPredCostFixingTimeThreshold = 100
+RCSPnumberOfBucketsPerVertex = 25
+RCSPdynamicBucketSteps = 1
+RCSPuseBidirectionalSearch = 1
+RCSPapplyReducedCostFixing = 1
+RCSPredCostFixingFalseGap = 0
+RCSPmaxNumOfColsPerIteration = 30
+RCSPmaxNumOfColsPerExactIteration = 150
+StabilizationMinPhaseOfStage = 0
+RCSPmaxNumOfLabelsInEnumeration = 1000000
+RCSPmaxNumOfEnumeratedSolutions = 10000000
+RCSPmaxNumOfEnumSolutionsForMIP = 10000
+RCSPinitNGneighbourhoodSize = 8
+RCSPmaxNGneighbourhoodSize = 16
+RCSPrankOneCutsMaxNumPerRound = 100
+RCSPrankOneCutsMaxNumRows = 7
+RCSPrankOneCutsMemoryType = 1
+CutTailingOffThreshold = 0.015
+CutTailingOffCounterThreshold = 3
+SafeDualBoundScaleFactor = -1
+StrongBranchingPhaseOneCandidatesNumber = 50
+StrongBranchingPhaseOneTreeSizeEstimRatio = 0.1
+StrongBranchingPhaseTwoCandidatesNumber = 3
+StrongBranchingPhaseTwoTreeSizeEstimRatio = 0.1
+MaxTimeForRestrictedMasterIpHeur = -1
+DivingHeurUseDepthLimit = -1
+MaxLDSbreadth = 0
+MaxLDSdepth = 0
+New model incumbent solution 11337, TIME = 0h0m0s54t = 54
+Model is built TIME = 0h0m0s55t = 55
+************************************************************************************************
+**** BaB tree root node
+**** Local DB = -1e+12, global bounds : [ -1e+12 , 11337 ], TIME = 0h0m0s55t = 55
+**** 1 open nodes, 0 columns (0 active), 0 dyn. constrs. (0 active), 122 art. vars. (122 active)
+************************************************************************************************
+<DWph=2> <it= 10> <et=0.58> <Mt= 0.00> <Spt= 0.01> <nCl=300> <DB=-3888563.4367> <Mlp=101033.9801> <PB=11337> 
+<DWph=2> <it= 20> <et=0.60> <Mt= 0.01> <Spt= 0.02> <nCl=266> <DB=-100337.0249> <Mlp= 3762.5428> <PB=11337> 
+<DWph=2> <it= 30> <et=0.63> <Mt= 0.01> <Spt= 0.02> <nCl=300> <DB=-4717.0701> <Mlp= 3137.3991> <PB=11337> 
+<DWph=2> <it= 40> <et=0.66> <Mt= 0.01> <Spt= 0.02> <nCl=292> <DB= -752.6124> <Mlp= 2943.9770> <PB=11337> 
+<DWph=2> <it= 50> <et=0.69> <Mt= 0.01> <Spt= 0.01> <nCl=198> <DB= 2566.4768> <Mlp= 2877.7250> <PB=11337> 
+<DWph=2> <it= 60> <et=0.71> <Mt= 0.00> <Spt= 0.01> <nCl= 71> <DB= 2854.2049> <Mlp= 2872.4500> <PB=11337> 
+<DWph=2> <it= 64> <et=0.71> <Mt= 0.00> <Spt= 0.01> <nCl= 12> <DB= 2872.4500> <Mlp= 2872.4500> <PB=11337> 
+<DWph=1> <it= 70> <et=0.73> <Mt= 0.01> <Spt= 0.01> <nCl=173> <DB= 2521.1121> <Mlp= 2862.1583> <PB=11337> 
+<DWph=1> <it= 79> <et=0.76> <Mt= 0.00> <Spt= 0.02> <nCl= 81> <DB= 2852.1750> <Mlp= 2852.1750> <PB=11337> 
+<DWph=0> <it= 80> <et=0.76> <Mt= 0.00> <Spt= 0.01> <nCl=107> <DB=  419.1750> <Mlp= 2852.1750> <PB=11337> 
+<DWph=0> <it= 86> <et=0.80> <Mt= 0.01> <Spt= 0.03> <nCl=362> <DB= 2833.3000> <Mlp= 2833.3000> <PB=2833.3> 
+ColGenEvalAlg final dual bound: 2833.3 (rounded: 2833.3)
+New model incumbent solution 2833.3, TIME = 0h0m0s80t = 80
+************************************************************************************************
+Search is finished, global bounds : [ 2833.3 , 2833.3 ], TIME = 0h0m0s80t = 80
+************************************************************************************************
+[32mBaPCod : solution defined.[00m
+statistics_cols: instance & :Optimal & cutoff & :bcRecRootDb & :bcTimeRootEval & :bcCountNodeProc & :bcRecBestDb & :bcRecBestInc & :bcTimeMain \\
+statistics: instance_28-triangle & 1 & 11337.0 & 2833.30 & 0.80 & 1 & 2833.30 & 2833.30 & 0.80 \\
+########################################################
+Route #1: 2 4 1 21 59 12 43 7 15 34 60 40 
+Route #2: 3 22 51 14 45 58 57 50 24 54 6 20 17 
+Route #3: 5 44 46 47 39 38 19 55 
+Route #4: 23 18 16 42 49 33 31 9 52 29 48 13 
+Route #5: 25 28 
+Route #6: 32 35 53 26 37 41 
+Route #7: 36 8 27 11 30 10 56 
+Cost 2833.2999999999993
+########################################################
+
+end_time=2026-04-22 11:33:27
+exit_code=0

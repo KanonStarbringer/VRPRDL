@@ -1,0 +1,172 @@
+instance_file=/mnt/c/Users/porin/OneDrive/Documentos/Python-Mestrado/Modelagem Matemática/Programação Inteira - Uchoa/Problema VRPRDL/instancias_turco/VRPRDL-triangle/vrptw_padrao_convertidos/instance_34-triangle.txt
+instance_name=instance_34-triangle
+n_customers=120
+capacity=750
+k_ub=120
+time_horizon=720
+ub_mode=trivial
+ub_used=18909.4
+cfg=config/VRPTW_set_1.cfg
+timeout_s=3600
+start_time=2026-04-22 13:47:05
+cmd=/home/poringman/.juliaup/bin/julia src/run.jl /mnt/c/Users/porin/OneDrive/Documentos/Python-Mestrado/Modelagem Matemática/Programação Inteira - Uchoa/Problema VRPRDL/instancias_turco/VRPRDL-triangle/vrptw_padrao_convertidos/instance_34-triangle.txt --cfg config/VRPTW_set_1.cfg -u 18909.4
+
+  Activating project at `~/VRPSolver/VRPSolverDemos/other/VRPTW`
+Application parameters:
+  batch  =>  nothing
+  update  =>  false
+  tikz  =>  nothing
+  instance  =>  "/mnt/c/Users/porin/OneDrive/Documentos/Python-Mestrado/Modelagem Matemática/Programação Inteira - Uchoa/Problema VRPRDL/instancias_turco/VRPRDL-triangle/vrptw_padrao_convertidos/instance_34-triangle.txt"
+  out  =>  nothing
+  nosolve  =>  false
+  ub  =>  18909.4
+  sol  =>  nothing
+  cfg  =>  "config/VRPTW_set_1.cfg"
+  enable_cap_res  =>  false
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+GIT VERSION RCSP: 
+GIT BRANCH: 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+VRPSolver v0.6.16, 10/11/2025, © Inria Bordeaux, France, vrpsolver.math.u-bordeaux.fr
+      Corresponds to the solver by Pessoa, Sadykov, Uchoa and Vanderbeck (2020)
+                 Paper: dx.doi.org/10.1007/s10107-020-01523-z
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+GIT VERSION BAPCOD: a7cb21f19424236c9d0da5dcf94961797a519470
+GIT BRANCH: main
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   BaPCod v0.84, 10/11/2025, © Inria Bordeaux, France, bapcod.math.u-bordeaux.fr 
+           THIS CODE IS PROVIDED AS IS, USE IT AT YOUR OWN RISK
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+--- VRPSOLVER PARAMETERS ---
+GlobalTimeLimit = 21474836
+MaxNbOfBBtreeNodeTreated = 100000
+treeSearchStrategy = 1
+RCSPstopCutGenTimeThresholdInPricing = 5
+RCSPhardTimeThresholdInPricing = 10
+RCSPredCostFixingTimeThreshold = 100
+RCSPnumberOfBucketsPerVertex = 25
+RCSPdynamicBucketSteps = 1
+RCSPuseBidirectionalSearch = 1
+RCSPapplyReducedCostFixing = 1
+RCSPredCostFixingFalseGap = 0
+RCSPmaxNumOfColsPerIteration = 30
+RCSPmaxNumOfColsPerExactIteration = 150
+StabilizationMinPhaseOfStage = 0
+RCSPmaxNumOfLabelsInEnumeration = 1000000
+RCSPmaxNumOfEnumeratedSolutions = 10000000
+RCSPmaxNumOfEnumSolutionsForMIP = 10000
+RCSPinitNGneighbourhoodSize = 8
+RCSPmaxNGneighbourhoodSize = 16
+RCSPrankOneCutsMaxNumPerRound = 100
+RCSPrankOneCutsMaxNumRows = 7
+RCSPrankOneCutsMemoryType = 1
+CutTailingOffThreshold = 0.015
+CutTailingOffCounterThreshold = 3
+SafeDualBoundScaleFactor = -1
+StrongBranchingPhaseOneCandidatesNumber = 50
+StrongBranchingPhaseOneTreeSizeEstimRatio = 0.1
+StrongBranchingPhaseTwoCandidatesNumber = 3
+StrongBranchingPhaseTwoTreeSizeEstimRatio = 0.1
+MaxTimeForRestrictedMasterIpHeur = -1
+DivingHeurUseDepthLimit = -1
+MaxLDSbreadth = 0
+MaxLDSdepth = 0
+New model incumbent solution 18909.4, TIME = 0h0m0s42t = 42
+Model is built TIME = 0h0m0s48t = 48
+************************************************************************************************
+**** BaB tree root node
+**** Local DB = -1e+12, global bounds : [ -1e+12 , 18909.4 ], TIME = 0h0m0s48t = 48
+**** 1 open nodes, 0 columns (0 active), 0 dyn. constrs. (0 active), 242 art. vars. (242 active)
+************************************************************************************************
+<DWph=2> <it= 10> <et=0.56> <Mt= 0.00> <Spt= 0.06> <nCl=300> <DB=-33670067.0425> <Mlp=852519.6227> <PB=18909.4> 
+<DWph=2> <it= 20> <et=0.64> <Mt= 0.02> <Spt= 0.06> <nCl=300> <DB=-19686717.7842> <Mlp=264452.5022> <PB=18909.4> 
+<DWph=2> <it= 30> <et=0.74> <Mt= 0.04> <Spt= 0.07> <nCl=299> <DB=-8582740.7585> <Mlp=85180.9438> <PB=18909.4> 
+<DWph=2> <it= 40> <et=0.85> <Mt= 0.05> <Spt= 0.06> <nCl=300> <DB=-3840671.4495> <Mlp=26592.4941> <PB=18909.4> 
+<DWph=2> <it= 50> <et=0.97> <Mt= 0.04> <Spt= 0.06> <nCl=260> <DB=-75550.2333> <Mlp= 5854.1740> <PB=18909.4> 
+<DWph=2> <it= 60> <et=1.11> <Mt= 0.06> <Spt= 0.09> <nCl=300> <DB=-27162.7147> <Mlp= 5203.9915> <PB=18909.4> 
+<DWph=2> <it= 70> <et=1.25> <Mt= 0.06> <Spt= 0.07> <nCl=300> <DB=-17119.0496> <Mlp= 4743.0582> <PB=18909.4> 
+<DWph=2> <it= 80> <et=1.38> <Mt= 0.05> <Spt= 0.08> <nCl=297> <DB=-5468.5857> <Mlp= 4423.4006> <PB=18909.4> 
+<DWph=2> <it= 90> <et=1.50> <Mt= 0.05> <Spt= 0.07> <nCl=300> <DB=-2929.1317> <Mlp= 4258.1981> <PB=18909.4> 
+<DWph=2> <it=100> <et=1.62> <Mt= 0.04> <Spt= 0.08> <nCl=297> <DB=  719.2377> <Mlp= 4185.1545> <PB=18909.4> 
+<DWph=2> <it=110> <et=1.73> <Mt= 0.03> <Spt= 0.08> <nCl=234> <DB= 1942.1412> <Mlp= 4163.7402> <PB=18909.4> 
+<DWph=2> <it=120> <et=1.84> <Mt= 0.03> <Spt= 0.08> <nCl=188> <DB= 3949.0586> <Mlp= 4152.4617> <PB=18909.4> 
+<DWph=2> <it=129> <et=1.93> <Mt= 0.01> <Spt= 0.08> <nCl= 87> <DB= 4152.0557> <Mlp= 4152.0557> <PB=18909.4> 
+<DWph=1> <it=130> <et=1.94> <Mt= 0.00> <Spt= 0.01> <nCl= 30> <DB= -333.9920> <Mlp= 4152.0557> <PB=18909.4> 
+<DWph=1> <it=140> <et=2.12> <Mt= 0.08> <Spt= 0.10> <nCl=290> <DB= 2783.4966> <Mlp= 4094.6454> <PB=18909.4> 
+<DWph=1> <it=150> <et=2.25> <Mt= 0.02> <Spt= 0.10> <nCl=208> <DB= 4035.8555> <Mlp= 4089.6950> <PB=18909.4> 
+<DWph=1> <it=158> <et=2.35> <Mt= 0.01> <Spt= 0.09> <nCl= 64> <DB= 4089.6413> <Mlp= 4089.6413> <PB=18909.4> 
+<DWph=0> <it=160> <et=2.39> <Mt= 0.01> <Spt= 0.03> <nCl=262> <DB= 2660.2746> <Mlp= 4085.7867> <PB=18909.4> 
+<DWph=0> <it=168> <et=2.55> <Mt= 0.03> <Spt= 0.14> <nCl=657> <DB= 4083.0167> <Mlp= 4083.0167> <PB=18909.4> 
+Reduced cost fixing for graph G_0...  TT = 0.021382, pt = 0.001707, dt = 0.019095, ct = 0, ndl = 7210', bdl = 315626', odl = 10346', odf = 51359', lpcb = 37597', cnt = 425990', bdch = 1283316', odch = 102261', lcp = 165917'
+took 0.02 sec., 61030 buck. arcs remain (93.3% from prev., 22.1% from max.)
+Run enumeration... took 0.06 sec. and not succeeded.
+ColGenEvalAlg final dual bound: 4083.02 (rounded: 4083.02)
+----- Relaxation was improved for 1 subproblems -----
+4973 columns (4714 active), 0 dyn. constrs. (0 active), 242 art. vars. (242 active)
+<DWph=2> <it= 10> <et=2.91> <Mt= 0.09> <Spt= 0.09> <nCl= 94> <DB= 3484.0458> <Mlp= 4084.7833> <PB=18909.4> 
+<DWph=2> <it= 14> <et=2.97> <Mt= 0.00> <Spt= 0.06> <nCl= 18> <DB= 4084.7833> <Mlp= 4084.7833> <PB=18909.4> 
+<DWph=1> <it= 18> <et=3.02> <Mt= 0.01> <Spt= 0.04> <nCl= 52> <DB= 4084.6833> <Mlp= 4084.6833> <PB=18909.4> 
+<DWph=0> <it= 20> <et=3.05> <Mt= 0.00> <Spt= 0.03> <nCl= 75> <DB= 4050.0421> <Mlp= 4084.6833> <PB=18909.4> 
+<DWph=0> <it= 21> <et=3.08> <Mt= 0.00> <Spt= 0.03> <nCl= 18> <DB= 4084.6833> <Mlp= 4084.6833> <PB=18909.4> 
+ColGenEvalAlg final dual bound: 4084.68 (rounded: 4084.68)
+----- Add fac. cuts : R1C(152), max.viol = 0.5, aver.viol = 0.346217, sep/add took 0.0147217/0.165877 sec. -----
+5230 columns (4971 active), 152 dyn. constrs. (152 active), 394 art. vars. (394 active)
+<DWph=2> <it= 10> <et=3.54> <Mt= 0.17> <Spt= 0.10> <nCl=140> <DB= 4050.9242> <Mlp= 4108.4709> <PB=18909.4> 
+<DWph=2> <it= 20> <et=3.67> <Mt= 0.01> <Spt= 0.11> <nCl= 68> <DB= 4096.3864> <Mlp= 4108.3864> <PB=18909.4> 
+<DWph=2> <it= 21> <et=3.68> <Mt= 0.01> <Spt= 0.01> <nCl=  1> <DB= 4108.3864> <Mlp= 4108.3864> <PB=18909.4> 
+<DWph=1> <it= 30> <et=4.05> <Mt= 0.23> <Spt= 0.13> <nCl=214> <DB= 1233.6376> <Mlp= 4103.1333> <PB=18909.4> 
+<DWph=1> <it= 39> <et=4.29> <Mt= 0.09> <Spt= 0.15> <nCl= 95> <DB= 4095.8417> <Mlp= 4095.8417> <PB=18909.4> 
+<DWph=0> <it= 40> <et=4.31> <Mt= 0.00> <Spt= 0.02> <nCl=124> <DB= 1479.8417> <Mlp= 4095.8417> <PB=18909.4> 
+<DWph=0> <it= 44> <et=4.41> <Mt= 0.02> <Spt= 0.08> <nCl=202> <DB= 4095.5417> <Mlp= 4095.5417> <PB=18909.4> 
+ColGenEvalAlg final dual bound: 4095.54 (rounded: 4095.54)
+----- Add fac. cuts : CAP(1) R1C(155), max.viol = 0.5, aver.viol = 0.300748, sep/add took 0.00918327/0.205812 sec. -----
+6074 columns (5815 active), 308 dyn. constrs. (172 active), 550 art. vars. (414 active)
+<DWph=2> <it= 10> <et=4.80> <Mt= 0.06> <Spt= 0.11> <nCl= 79> <DB= 4104.3425> <Mlp= 4109.2533> <PB=18909.4> 
+<DWph=2> <it= 16> <et=4.90> <Mt= 0.01> <Spt= 0.09> <nCl= 42> <DB= 4109.1585> <Mlp= 4109.1585> <PB=18909.4> 
+<DWph=1> <it= 20> <et=4.98> <Mt= 0.02> <Spt= 0.06> <nCl=103> <DB= 1980.1028> <Mlp= 4107.9181> <PB=18909.4> 
+<DWph=1> <it= 29> <et=5.16> <Mt= 0.04> <Spt= 0.13> <nCl=122> <DB= 4107.9042> <Mlp= 4107.9042> <PB=18909.4> 
+<DWph=0> <it= 30> <et=5.18> <Mt= 0.00> <Spt= 0.03> <nCl=113> <DB= 2763.9042> <Mlp= 4107.9042> <PB=18909.4> 
+<DWph=0> <it= 35> <et=5.43> <Mt= 0.10> <Spt= 0.14> <nCl=432> <DB= 4104.0250> <Mlp= 4104.0250> <PB=18909.4> 
+ColGenEvalAlg final dual bound: 4104.03 (rounded: 4104.03)
+----- Add fac. cuts : R1C(153), max.viol = 0.5, aver.viol = 0.262527, sep/add took 0.0169862/0.236218 sec. -----
+6965 columns (6706 active), 325 dyn. constrs. (174 active), 703 art. vars. (416 active)
+<DWph=2> <it= 10> <et=5.92> <Mt= 0.09> <Spt= 0.13> <nCl= 92> <DB= 4109.6421> <Mlp= 4109.6421> <PB=18909.4> 
+<DWph=1> <it= 14> <et=6.00> <Mt= 0.01> <Spt= 0.06> <nCl= 54> <DB= 4109.3772> <Mlp= 4109.3772> <PB=18909.4> 
+<DWph=0> <it= 20> <et=6.25> <Mt= 0.10> <Spt= 0.15> <nCl=427> <DB= 4108.3190> <Mlp= 4108.3190> <PB=18909.4> 
+ColGenEvalAlg final dual bound: 4108.32 (rounded: 4108.32)
+----- Add fac. cuts : R1C(253), max.viol = 0.571429, aver.viol = 0.283079, sep/add took 0.0398729/0.459628 sec. -----
+7538 columns (7279 active), 427 dyn. constrs. (290 active), 956 art. vars. (532 active)
+<DWph=2> <it= 10> <et=7.05> <Mt= 0.13> <Spt= 0.16> <nCl= 94> <DB= 4113.8365> <Mlp= 4113.8365> <PB=18909.4> 
+<DWph=1> <it= 16> <et=7.18> <Mt= 0.03> <Spt= 0.10> <nCl=111> <DB= 4113.6310> <Mlp= 4113.6310> <PB=18909.4> 
+<DWph=0> <it= 20> <et=7.87> <Mt= 0.56> <Spt= 0.13> <nCl=377> <DB= 4034.3139> <Mlp= 4112.8000> <PB=4112.8> 
+<DWph=0> <it= 25> <et=8.22> <Mt= 0.19> <Spt= 0.16> <nCl=231> <DB= 4112.7878> <Mlp= 4112.7878> <PB=4112.8> 
+Reduced cost fixing for graph G_0...  TT = 0.008546, pt = 0.003207, dt = 0.004669, ct = 0, ndl = 4697', bdl = 70536', odl = 1636', odf = 12256', lpcb = 164258', cnt = 6257', bdch = 197380', odch = 16448', lcp = 13752'
+took 0 sec., 1972 buck. arcs remain (3.23% from prev., 0.715% from max.)
+Run enumeration... took 0.03 sec. and succeeded! 
+ColGenEvalAlg final dual bound: 4112.79 (rounded: 4112.79)
+Gap improvement since the last cut separation : 0.997286 (4108.32)
+----- Terminating the node by MIP -----
+New model incumbent solution 4112.8, TIME = 0h0m8s62t = 862
+************************************************************************************************
+Search is finished, global bounds : [ 4112.8 , 4112.8 ], TIME = 0h0m8s62t = 862
+************************************************************************************************
+[32mBaPCod : solution defined.[00m
+statistics_cols: instance & :Optimal & cutoff & :bcRecRootDb & :bcTimeRootEval & :bcCountNodeProc & :bcRecBestDb & :bcRecBestInc & :bcTimeMain \\
+statistics: instance_34-triangle & 1 & 18909.4 & 4112.80 & 8.62 & 1 & 4112.80 & 4112.80 & 8.62 \\
+########################################################
+Route #1: 6 30 29 9 99 98 75 1 50 
+Route #2: 18 
+Route #3: 24 70 80 53 16 111 31 93 7 67 63 
+Route #4: 32 8 79 3 77 26 96 57 
+Route #5: 33 69 120 106 42 114 81 19 84 119 23 2 
+Route #6: 36 15 95 94 21 22 12 49 88 68 64 
+Route #7: 41 60 83 86 117 25 38 82 74 108 5 13 10 47 
+Route #8: 54 104 118 44 35 78 71 46 72 37 
+Route #9: 66 51 59 28 55 115 27 52 90 109 92 39 20 56 14 
+Route #10: 100 62 65 87 107 112 58 116 73 40 85 103 102 105 110 
+Route #11: 113 45 61 11 48 91 43 34 17 97 101 89 76 4 
+Cost 4112.799999999999
+########################################################
+
+end_time=2026-04-22 13:47:22
+exit_code=0

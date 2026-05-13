@@ -1,0 +1,24 @@
+========================================
+Bootstrapping VRPRDL_CG environment
+project  = /mnt/c/Users/porin/OneDrive/Documentos/Python-Mestrado/Modelagem Matemática/Programação Inteira - Uchoa/Problema VRPRDL/instancias_turco/vrprdl_cg
+julia    = 1.12.6
+========================================
+  Activating project at `/mnt/c/Users/porin/OneDrive/Documentos/Python-Mestrado/Modelagem Matemática/Programação Inteira - Uchoa/Problema VRPRDL/instancias_turco/vrprdl_cg`
+  0 dependencies successfully precompiled in 0 seconds. 56 already precompiled.
+
+The following 1 direct dependency failed to precompile:
+
+VRPRDL_CG 
+
+Error: Missing source file for Base.PkgId(Base.UUID("6b1e1c77-7e46-4b3e-9a4f-5c11d7f9c001"), "VRPRDL_CG"[bootstrap] Pkg.instantiate() OK
+  0 dependencies successfully precompiled in 0 seconds. 56 already precompiled.
+
+[bootstrap][WARN] Pkg.precompile() falhou — seguindo assim mesmo.
+PkgPrecompileError: The following 1 direct dependency failed to precompile:
+
+VRPRDL_CG 
+
+Error: Missing source file for Base.PkgId(Base.UUID("6b1e1c77-7e46-4b3e-9a4f-5c11d7f9c001"), "VRPRDL_CG"
+[bootstrap] sanity-check (using JSON3, JuMP, CPLEX) ...
+[bootstrap] pacotes carregados OK
+[bootstrap] tudo pronto. Pode rodar o batch.

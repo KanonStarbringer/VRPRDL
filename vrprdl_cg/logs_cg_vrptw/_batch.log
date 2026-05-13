@@ -1,0 +1,51 @@
+========================================
+[batch] instâncias  : 40
+[batch] json_dir    : /mnt/c/Users/porin/OneDrive/Documentos/Python-Mestrado/Modelagem Matemática/Programação Inteira - Uchoa/Problema VRPRDL/instancias_turco/VRPRDL-triangle/json_convertidos
+[batch] vrps_logs   : /mnt/c/Users/porin/OneDrive/Documentos/Python-Mestrado/Modelagem Matemática/Programação Inteira - Uchoa/Problema VRPRDL/instancias_turco/VRPRDL-triangle/logs_vrptw_convertidos
+[batch] out_logs    : /mnt/c/Users/porin/OneDrive/Documentos/Python-Mestrado/Modelagem Matemática/Programação Inteira - Uchoa/Problema VRPRDL/instancias_turco/vrprdl_cg/logs_cg_vrptw
+[batch] alpha_wait  : 0.0
+========================================
+[1/40] instance_0-triangle ... OK  LP=3538.00  MIP=3538.00  veh=15  cols=15  iters=1  t=3.68s
+[2/40] instance_1-triangle ... OK  LP=3956.00  MIP=3956.00  veh=12  cols=18  iters=1  t=0.09s
+[3/40] instance_10-triangle ... OK  LP=9284.00  MIP=9284.00  veh=30  cols=30  iters=1  t=0.09s
+[4/40] instance_11-triangle ... OK  LP=8286.00  MIP=8286.00  veh=30  cols=30  iters=1  t=0.13s
+[5/40] instance_12-triangle ... OK  LP=7680.00  MIP=7680.00  veh=30  cols=30  iters=1  t=-0.22s
+[6/40] instance_13-triangle ... OK  LP=6860.00  MIP=6860.00  veh=30  cols=30  iters=1  t=0.06s
+[7/40] instance_14-triangle ... OK  LP=8276.00  MIP=8276.00  veh=30  cols=30  iters=1  t=0.09s
+[8/40] instance_15-triangle ... OK  LP=8516.00  MIP=8516.00  veh=30  cols=30  iters=1  t=0.18s
+[9/40] instance_16-triangle ... OK  LP=8530.00  MIP=8530.00  veh=30  cols=30  iters=1  t=0.06s
+[10/40] instance_17-triangle ... OK  LP=9566.00  MIP=9566.00  veh=30  cols=30  iters=1  t=0.09s
+[11/40] instance_18-triangle ... OK  LP=9030.00  MIP=9030.00  veh=30  cols=30  iters=1  t=0.15s
+[12/40] instance_19-triangle ... OK  LP=8050.00  MIP=8050.00  veh=30  cols=30  iters=1  t=0.04s
+[13/40] instance_2-triangle ... OK  LP=3602.00  MIP=3602.00  veh=15  cols=15  iters=1  t=0.10s
+[14/40] instance_20-triangle ... OK  LP=17926.00  MIP=17926.00  veh=60  cols=60  iters=1  t=0.29s
+[15/40] instance_21-triangle ... OK  LP=16740.00  MIP=16740.00  veh=60  cols=60  iters=1  t=0.24s
+[16/40] instance_22-triangle ... OK  LP=18448.00  MIP=18448.00  veh=60  cols=60  iters=1  t=0.29s
+[17/40] instance_23-triangle ... OK  LP=19708.00  MIP=19708.00  veh=60  cols=60  iters=1  t=0.36s
+[18/40] instance_24-triangle ... OK  LP=16410.00  MIP=16410.00  veh=60  cols=60  iters=1  t=0.24s
+[19/40] instance_25-triangle ... OK  LP=21024.00  MIP=21024.00  veh=60  cols=60  iters=1  t=0.31s
+[20/40] instance_26-triangle ... OK  LP=19392.00  MIP=19392.00  veh=60  cols=60  iters=1  t=0.28s
+[21/40] instance_27-triangle ... OK  LP=16796.00  MIP=16796.00  veh=60  cols=60  iters=1  t=0.22s
+[22/40] instance_28-triangle ... OK  LP=19672.00  MIP=19672.00  veh=60  cols=60  iters=1  t=0.41s
+[23/40] instance_29-triangle ... OK  LP=20728.00  MIP=20728.00  veh=60  cols=60  iters=1  t=0.21s
+[24/40] instance_3-triangle ... OK  LP=3672.00  MIP=3672.00  veh=15  cols=15  iters=1  t=0.10s
+[25/40] instance_30-triangle ... OK  LP=32546.00  MIP=32546.00  veh=120  cols=120  iters=1  t=0.70s
+[26/40] instance_31-triangle ... OK  LP=35922.00  MIP=35922.00  veh=120  cols=120  iters=1  t=0.85s
+[27/40] instance_32-triangle ... OK  LP=31674.00  MIP=31674.00  veh=120  cols=120  iters=1  t=0.85s
+[28/40] instance_33-triangle ... OK  LP=34872.00  MIP=34872.00  veh=120  cols=120  iters=1  t=0.64s
+[29/40] instance_34-triangle ... OK  LP=32764.00  MIP=32764.00  veh=120  cols=120  iters=1  t=1.11s
+[30/40] instance_35-triangle ... OK  LP=40716.00  MIP=40716.00  veh=120  cols=120  iters=1  t=0.74s
+[31/40] instance_36-triangle ... OK  LP=35712.00  MIP=35712.00  veh=120  cols=120  iters=1  t=0.85s
+[32/40] instance_37-triangle ... OK  LP=37358.00  MIP=37358.00  veh=120  cols=120  iters=1  t=0.83s
+[33/40] instance_38-triangle ... OK  LP=37252.00  MIP=37252.00  veh=120  cols=120  iters=1  t=0.84s
+[34/40] instance_39-triangle ... OK  LP=34426.00  MIP=34426.00  veh=120  cols=120  iters=1  t=0.69s
+[35/40] instance_4-triangle ... OK  LP=5806.00  MIP=5806.00  veh=15  cols=15  iters=1  t=0.06s
+[36/40] instance_5-triangle ... OK  LP=5754.00  MIP=5754.00  veh=20  cols=20  iters=1  t=0.05s
+[37/40] instance_6-triangle ... OK  LP=5510.00  MIP=5510.00  veh=20  cols=20  iters=1  t=0.14s
+[38/40] instance_7-triangle ... OK  LP=6002.00  MIP=6002.00  veh=20  cols=20  iters=1  t=0.06s
+[39/40] instance_8-triangle ... OK  LP=5270.00  MIP=5270.00  veh=20  cols=20  iters=1  t=0.09s
+[40/40] instance_9-triangle ... OK  LP=6034.00  MIP=6034.00  veh=20  cols=20  iters=1  t=0.07s
+========================================
+[batch] OK=40  SKIP=0  ERR=0  total_time=16.4s
+[batch] CSV agregado: /mnt/c/Users/porin/OneDrive/Documentos/Python-Mestrado/Modelagem Matemática/Programação Inteira - Uchoa/Problema VRPRDL/instancias_turco/vrprdl_cg/logs_cg_vrptw/_summary.csv
+========================================

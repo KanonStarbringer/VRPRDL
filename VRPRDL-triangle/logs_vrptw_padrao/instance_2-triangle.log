@@ -1,0 +1,102 @@
+instance_file=/mnt/c/Users/porin/OneDrive/Documentos/Python-Mestrado/Modelagem Matemática/Programação Inteira - Uchoa/Problema VRPRDL/instancias_turco/VRPRDL-triangle/vrptw_padrao_convertidos/instance_2-triangle.txt
+instance_name=instance_2-triangle
+n_customers=15
+capacity=750
+k_ub=15
+time_horizon=720
+ub_mode=trivial
+ub_used=1954.8
+cfg=config/VRPTW_set_1.cfg
+timeout_s=3600
+start_time=2026-04-22 11:29:38
+cmd=/home/poringman/.juliaup/bin/julia src/run.jl /mnt/c/Users/porin/OneDrive/Documentos/Python-Mestrado/Modelagem Matemática/Programação Inteira - Uchoa/Problema VRPRDL/instancias_turco/VRPRDL-triangle/vrptw_padrao_convertidos/instance_2-triangle.txt --cfg config/VRPTW_set_1.cfg -u 1954.8
+
+  Activating project at `~/VRPSolver/VRPSolverDemos/other/VRPTW`
+Application parameters:
+  batch  =>  nothing
+  update  =>  false
+  tikz  =>  nothing
+  instance  =>  "/mnt/c/Users/porin/OneDrive/Documentos/Python-Mestrado/Modelagem Matemática/Programação Inteira - Uchoa/Problema VRPRDL/instancias_turco/VRPRDL-triangle/vrptw_padrao_convertidos/instance_2-triangle.txt"
+  out  =>  nothing
+  nosolve  =>  false
+  ub  =>  1954.8
+  sol  =>  nothing
+  cfg  =>  "config/VRPTW_set_1.cfg"
+  enable_cap_res  =>  false
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+GIT VERSION RCSP: 
+GIT BRANCH: 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+VRPSolver v0.6.16, 10/11/2025, © Inria Bordeaux, France, vrpsolver.math.u-bordeaux.fr
+      Corresponds to the solver by Pessoa, Sadykov, Uchoa and Vanderbeck (2020)
+                 Paper: dx.doi.org/10.1007/s10107-020-01523-z
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+GIT VERSION BAPCOD: a7cb21f19424236c9d0da5dcf94961797a519470
+GIT BRANCH: main
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   BaPCod v0.84, 10/11/2025, © Inria Bordeaux, France, bapcod.math.u-bordeaux.fr 
+           THIS CODE IS PROVIDED AS IS, USE IT AT YOUR OWN RISK
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+--- VRPSOLVER PARAMETERS ---
+GlobalTimeLimit = 21474836
+MaxNbOfBBtreeNodeTreated = 100000
+treeSearchStrategy = 1
+RCSPstopCutGenTimeThresholdInPricing = 5
+RCSPhardTimeThresholdInPricing = 10
+RCSPredCostFixingTimeThreshold = 100
+RCSPnumberOfBucketsPerVertex = 25
+RCSPdynamicBucketSteps = 1
+RCSPuseBidirectionalSearch = 1
+RCSPapplyReducedCostFixing = 1
+RCSPredCostFixingFalseGap = 0
+RCSPmaxNumOfColsPerIteration = 30
+RCSPmaxNumOfColsPerExactIteration = 150
+StabilizationMinPhaseOfStage = 0
+RCSPmaxNumOfLabelsInEnumeration = 1000000
+RCSPmaxNumOfEnumeratedSolutions = 10000000
+RCSPmaxNumOfEnumSolutionsForMIP = 10000
+RCSPinitNGneighbourhoodSize = 8
+RCSPmaxNGneighbourhoodSize = 16
+RCSPrankOneCutsMaxNumPerRound = 100
+RCSPrankOneCutsMaxNumRows = 7
+RCSPrankOneCutsMemoryType = 1
+CutTailingOffThreshold = 0.015
+CutTailingOffCounterThreshold = 3
+SafeDualBoundScaleFactor = -1
+StrongBranchingPhaseOneCandidatesNumber = 50
+StrongBranchingPhaseOneTreeSizeEstimRatio = 0.1
+StrongBranchingPhaseTwoCandidatesNumber = 3
+StrongBranchingPhaseTwoTreeSizeEstimRatio = 0.1
+MaxTimeForRestrictedMasterIpHeur = -1
+DivingHeurUseDepthLimit = -1
+MaxLDSbreadth = 0
+MaxLDSdepth = 0
+New model incumbent solution 1954.8, TIME = 0h0m0s33t = 33
+Model is built TIME = 0h0m0s33t = 33
+************************************************************************************************
+**** BaB tree root node
+**** Local DB = -1e+12, global bounds : [ -1e+12 , 1954.8 ], TIME = 0h0m0s33t = 33
+**** 1 open nodes, 0 columns (0 active), 0 dyn. constrs. (0 active), 32 art. vars. (32 active)
+************************************************************************************************
+<DWph=2> <it= 10> <et=0.34> <Mt= 0.00> <Spt= 0.00> <nCl=288> <DB=  283.1672> <Mlp= 1027.8333> <PB=1954.8> 
+<DWph=2> <it= 19> <et=0.34> <Mt= 0.00> <Spt= 0.00> <nCl=131> <DB=  967.9000> <Mlp=  967.9000> <PB=967.9> 
+<DWph=1> <it= 20> <et=0.34> <Mt= 0.00> <Spt= 0.00> <nCl=  8> <DB=  963.4000> <Mlp=  967.9000> <PB=967.9> 
+<DWph=1> <it= 21> <et=0.34> <Mt= 0.00> <Spt= 0.00> <nCl=  0> <DB=  967.9000> <Mlp=  967.9000> <PB=967.9> 
+<DWph=0> <it= 23> <et=0.35> <Mt= 0.00> <Spt= 0.01> <nCl=130> <DB=  967.9000> <Mlp=  967.9000> <PB=967.9> 
+ColGenEvalAlg final dual bound: 967.9 (rounded: 967.9)
+New model incumbent solution 967.9, TIME = 0h0m0s35t = 35
+************************************************************************************************
+Search is finished, global bounds : [ 967.9 , 967.9 ], TIME = 0h0m0s35t = 35
+************************************************************************************************
+[32mBaPCod : solution defined.[00m
+statistics_cols: instance & :Optimal & cutoff & :bcRecRootDb & :bcTimeRootEval & :bcCountNodeProc & :bcRecBestDb & :bcRecBestInc & :bcTimeMain \\
+statistics: instance_2-triangle & 1 & 1954.8 & 967.90 & 0.35 & 1 & 967.90 & 967.90 & 0.35 \\
+########################################################
+Route #1: 3 
+Route #2: 4 15 6 11 12 10 9 
+Route #3: 13 14 5 7 2 8 1 
+Cost 967.9000000000001
+########################################################
+
+end_time=2026-04-22 11:29:46
+exit_code=0

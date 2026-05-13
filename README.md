@@ -10,7 +10,7 @@ Uma cópia local do artigo está em `ozbaygin2017.pdf` (somente para uso acadêm
 
 ## Formulação matemática (VRPRDL)
 
-Seguindo a Seção 2 de Özbaygın et al. (2017), seja um grafo direcionado completo \(G=(N,A)\), com \(N=\{0,1,\ldots,n\}\), nó \(0\) = depósito, arco \((i,j)\in A\) com tempo de viagem \(t_{ij}\) e custo \(w_{ij}\) (ambos satisfazem desigualdade triangular). Conjunto de clientes \(C\); cada cliente \(c\in C\) tem demanda \(d_c\) e um conjunto de localizações possíveis \(N_c\subset N\) (disjuntos entre clientes após duplicação de nós). Cada local \(i\in N_c\) tem janela de tempo \([e_i,\ell_i]\) (não sobrepostas dentro do mesmo cliente). \(c(i)\) denota o cliente do nó \(i\), com \(c(0)=0\). Frota homogênea de até \(m\) veículos, capacidade \(Q\), horizonte \(T\).
+Seguindo a Seção 2 de Özbaygın et al. (2017), seja um grafo direcionado completo $(G=(N,A))$, com \(N=\{0,1,\ldots,n\}\), nó \(0\) = depósito, arco \((i,j)\in A\) com tempo de viagem \(t_{ij}\) e custo \(w_{ij}\) (ambos satisfazem desigualdade triangular). Conjunto de clientes \(C\); cada cliente \(c\in C\) tem demanda \(d_c\) e um conjunto de localizações possíveis \(N_c\subset N\) (disjuntos entre clientes após duplicação de nós). Cada local \(i\in N_c\) tem janela de tempo \([e_i,\ell_i]\) (não sobrepostas dentro do mesmo cliente). \(c(i)\) denota o cliente do nó \(i\), com \(c(0)=0\). Frota homogênea de até \(m\) veículos, capacidade \(Q\), horizonte \(T\).
 
 ### Modelo em arcos (MIP)
 

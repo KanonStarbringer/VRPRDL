@@ -1,4 +1,4 @@
-# Instâncias e ferramentas VRPRDL (Özbaygın et al., 2017)
+# Problema de Roteamento de Veículos com Localidades Móveis - VRPRDL (Özbaygın et al., 2017)
 
 Repositório com **instâncias** do *Vehicle Routing Problem with Roaming Delivery Locations* (VRPRDL), conversores entre formatos, scripts para acoplar ao **VRPSolver** e o subprojeto **Julia** `vrprdl_cg` (geração de colunas com **JuMP + CPLEX**).
 

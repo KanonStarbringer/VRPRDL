@@ -23,16 +23,16 @@ Variáveis: $x_{ij}\in\{0,1\}$ uso do arco $(i,j)$; $s_i$ instante de chegada em
 
 sujeito a (notação do artigo):
 
-1. **Fluxo:** \(x(\delta^-(i)) - x(\delta^+(i)) = 0\) para todo \(i\in N\).
-2. **Exatamente uma visita por cliente:** \(\sum_{i\in N_c} x(\delta^-(i)) = 1\) para todo \(c\in C\).
-3. **Limite de veículos:** \(x(\delta^+(0)) \le m\).
+1. **Fluxo:** $x(\delta^-(i)) - x(\delta^+(i)) = 0$ para todo $i\in N$.
+2. **Exatamente uma visita por cliente:** $\sum_{i\in N_c} x(\delta^-(i)) = 1$ para todo $c\in C$.
+3. **Limite de veículos:** $x(\delta^+(0)) \le m$.
 4. **Tempos (MTZ-style com big-M em janelas):**  
-   \(s_j \ge s_i + t_{ij} x_{ij} + (e_j - \ell_i)(1-x_{ij})\) para todo \((i,j)\in A\), \(j\neq 0\).
-5. **Retorno ao depósito:** \(s_i + t_{i0} x_{i0} \le \min\{\ell_i + t_{i0},\, T\}\) para todo \((i,0)\in A\).
-6. **Janelas:** \(e_i \le s_i \le \ell_i\) para todo \(i\in N\).
+   $s_j \ge s_i + t_{ij} x_{ij} + (e_j - \ell_i)(1-x_{ij})$ para todo $(i,j)\in A$, $j\neq 0$.
+5. **Retorno ao depósito:** $s_i + t_{i0} x_{i0} \le \min\{\ell_i + t_{i0},\, T\}$ para todo $(i,0)\in A$.
+6. **Janelas:** $e_i \le s_i \le \ell_i$ para todo $i\in N$.
 7. **Capacidade (acoplada ao fluxo):**  
-   \(y_j \ge y_i + d_{c(j)} - Q(1-x_{ij})\) para todo \((i,j)\in A\), \(j\neq 0\).
-8. **Limites de carga:** \(d_{c(i)} \le y_i \le Q\) para todo \(i\in N\).
+   $y_j \ge y_i + d_{c(j)} - Q(1-x_{ij})$ para todo $(i,j)\in A\), \(j\neq 0$.
+8. **Limites de carga:** $d_{c(i)} \le y_i \le Q$ para todo $i\in N$.
 
 O objetivo é minimizar o custo total das rotas respeitando capacidade, duração e janelas, visitando **exatamente um** nó de cada \(N_c\).
 

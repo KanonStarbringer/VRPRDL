@@ -38,23 +38,23 @@ O objetivo é minimizar o custo total das rotas respeitando capacidade, duraçã
 
 ### Formulação por conjuntos (Dantzig–Wolfe)
 
-Seja \(R\) o conjunto de **rotas factíveis** (sequências de visitas respeitando as restrições acima), \(w_r\) o custo da rota \(r\in R\), e \(a_{ir}\in\{0,1\}\) indicando se o nó \(i\in N\) é visitado na rota \(r\). Com variáveis \(z_r\in\mathbb{Z}_+\) (número de vezes que a rota \(r\) é usada):
+Seja $R$ o conjunto de **rotas factíveis** (sequências de visitas respeitando as restrições acima), $w_r$ o custo da rota $r\in R$, e $a_{ir}\in\{0,1\}$ indicando se o nó $i\in N$ é visitado na rota $r$. Com variáveis $z_r\in\mathbb{Z}_+$ (número de vezes que a rota $r$ é usada):
 
-\[
+```math
 \min \sum_{r\in R} w_r\, z_r
-\]
+```
 
-\[
+```math
 \sum_{r\in R}\sum_{i\in N_c} a_{ir}\, z_r = 1 \quad \forall c\in C
-\]
+```
 
-\[
+```math
 \sum_{r\in R} z_r \le m
-\]
+```
 
-\[
+```math
 z_r \in \mathbb{Z}_+ \quad \forall r\in R
-\]
+```
 
 O artigo observa que, sob custos de arco que satisfazem a desigualdade triangular, as igualdades de cobertura podem ser relaxadas para \(\ge 1\) (set covering), tornando os duais das restrições de cliente **não negativos** e, em geral, acelerando a geração de colunas.
 

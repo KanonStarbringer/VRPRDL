@@ -56,9 +56,9 @@ Seja $R$ o conjunto de **rotas factíveis** (sequências de visitas respeitando 
 z_r \in \mathbb{Z}_+ \quad \forall r\in R
 ```
 
-O artigo observa que, sob custos de arco que satisfazem a desigualdade triangular, as igualdades de cobertura podem ser relaxadas para \(\ge 1\) (set covering), tornando os duais das restrições de cliente **não negativos** e, em geral, acelerando a geração de colunas.
+O artigo observa que, sob custos de arco que satisfazem a desigualdade triangular, as igualdades de cobertura podem ser relaxadas para $\ge 1$ (set covering), tornando os duais das restrições de cliente **não negativos** e, em geral, acelerando a geração de colunas.
 
-O **problema de pricing** busca colunas (rotas) com **custo reduzido negativo** em relação aos duais \(\lambda^*\) do master restrito; ver equações (13)–(14) do artigo.
+O **problema de pricing** busca colunas (rotas) com **custo reduzido negativo** em relação aos duais $\lambda^*$ do master restrito; ver equações (13)–(14) do artigo.
 
 ---
 

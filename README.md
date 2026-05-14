@@ -14,11 +14,12 @@ Seguindo a Seção 2 de Özbaygın et al. (2017), seja um grafo direcionado comp
 
 ### Modelo em arcos (MIP)
 
-Variáveis: \(x_{ij}\in\{0,1\}\) uso do arco \((i,j)\); \(s_i\) instante de chegada em \(i\); \(y_i\) carga acumulada ao sair de \(i\). Com \(\delta^-(i)\), \(\delta^+(i)\) conjuntos de arcos entrando/saindo de \(i\), e \(x(A')=\sum_{(i,j)\in A'} x_{ij}\):
+Variáveis: $x_{ij}\in\{0,1\}$ uso do arco $(i,j)$; $s_i$ instante de chegada em $i$; $y_i$ carga acumulada ao sair de $i$. Com $\delta^-(i)$, $\delta^+(i)$ conjuntos de arcos entrando/saindo de $i$, e $x(A')=\sum_{(i,j)\in A'} x_{ij}$:
 
-\[
+
+```math
 \min \sum_{(i,j)\in A} w_{ij}\,x_{ij}
-\]
+```
 
 sujeito a (notação do artigo):
 

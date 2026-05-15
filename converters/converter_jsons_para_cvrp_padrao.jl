@@ -24,7 +24,7 @@ using JSON3
 using Printf
 
 function get_base_dir()
-    return joinpath(@__DIR__, "VRPRDL-triangle")
+    return normpath(joinpath(@__DIR__, "..", "VRPRDL-triangle"))
 end
 
 function is_customer_real(customer::Dict{String,Any})

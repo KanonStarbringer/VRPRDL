@@ -260,11 +260,10 @@ backbones passam a respeitar uma janela por cliente (a "mais larga"
 entre as candidatas), de modo que o expander no VRPRDL encontra
 muito mais rotas viáveis.
 
-**Passo 1.** Converter JSONs para formato Solomon (na pasta
-`instancias_turco/`):
+**Passo 1.** Converter JSONs para formato Solomon (na **raiz** do repositório):
 
 ```bash
-julia ../converter_jsons_para_vrptw.jl
+julia converters/converter_jsons_para_vrptw.jl
 ```
 
 Gera arquivos em `VRPRDL-triangle/vrptw_convertidos/*.txt`.
@@ -272,10 +271,9 @@ Gera arquivos em `VRPRDL-triangle/vrptw_convertidos/*.txt`.
 **Passo 2.** Rodar o demo VRPTW do VRPSolver nas 40 instâncias:
 
 ```bash
-cd ..
-dos2unix rodar_vrps_vrptw_turco.sh
-chmod +x rodar_vrps_vrptw_turco.sh
-./rodar_vrps_vrptw_turco.sh
+dos2unix scripts/batch/rodar_vrps_vrptw_turco.sh
+chmod +x scripts/batch/rodar_vrps_vrptw_turco.sh
+./scripts/batch/rodar_vrps_vrptw_turco.sh
 ```
 
 Gera logs em `VRPRDL-triangle/logs_vrptw_convertidos/*.log`.

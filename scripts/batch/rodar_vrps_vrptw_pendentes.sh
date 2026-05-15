@@ -28,7 +28,8 @@
 set -u
 
 SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
-BASE_DIR="$SCRIPT_DIR"
+REPO_ROOT="$(cd "$SCRIPT_DIR/../.." && pwd)"
+BASE_DIR="$REPO_ROOT"
 INST_DIR="$BASE_DIR/VRPRDL-triangle/vrptw_padrao_convertidos"
 LOG_DIR="$BASE_DIR/VRPRDL-triangle/logs_vrptw_padrao"
 PARAMS_CSV="$INST_DIR/_params.csv"

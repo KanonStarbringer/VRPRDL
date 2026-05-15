@@ -43,7 +43,7 @@ if [ ! -d "$JSON_DIR" ]; then
 fi
 if [ ! -d "$LOG_SRC_DIR" ]; then
     echo "Erro: pasta de logs VRPTW não encontrada: $LOG_SRC_DIR"
-    echo "Dica: rode antes 'rodar_vrps_vrptw_turco.sh' na pasta instancias_turco/."
+    echo "Dica: rode antes './scripts/batch/rodar_vrps_vrptw_turco.sh' na raiz do repositório."
     exit 1
 fi
 if [ ! -x "$JULIA_BIN" ]; then

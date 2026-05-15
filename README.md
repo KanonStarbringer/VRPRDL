@@ -70,10 +70,11 @@ O **problema de pricing** busca colunas (rotas) com **custo reduzido negativo** 
 | `VRPRDL-triangle/` | Instâncias no formato original (txt), JSON e projeções VRP/VRPTW/CVRP. Figuras e logs de execução são **gerados localmente** pelos scripts (não versionados). |
 | `additional_instances/` | Instâncias adicionais (segundo conjunto do artigo / variantes). |
 | `vrprdl_cg/` | Projeto Julia: **column generation** com master em JuMP+CPLEX e pricing via pool (logs VRPSolver) e/ou *bucket graph* (C++, biblioteca [bucket-graph-spprc](https://github.com/spoorendonk/bucket-graph-spprc) incluída em `third_party/`). |
-| `converter_*.jl` | Conversão entre txt ↔ JSON ↔ formatos para demos do VRPSolver. |
-| `rodar_*.sh` | *Batch* em Bash (pensado para **WSL/Linux**): VRPSolver sobre `.vrp`, CVRP padrão, VRPTW, etc. |
-| `instance_format_description.txt` | Descrição do formato txt das instâncias Reyes/Özbaygın. |
-| `plotar_rotas_turco_batch.py` | Utilitário Python para visualização de rotas (dependências próprias). |
+| `converters/` | Scripts **Julia** `converter_*.jl`: txt ↔ JSON ↔ formatos para demos do VRPSolver. Rode a partir da raiz: `julia converters/nome.jl`. |
+| `scripts/batch/` | *Batch* em Bash (`rodar_vrps_*.sh`), caminhos relativos à **raiz do repositório**. |
+| `scripts/plotar_rotas_turco_batch.py` | Utilitário Python para visualização de rotas (dependências próprias). |
+| `docs/instance_format_description.txt` | Descrição do formato txt das instâncias Reyes/Özbaygın. |
+| `docs/README_detailed.md` | Notas adicionais (EN) sobre CG e pipeline. |
 
 Documentação do VRPRDL no VRPSolver: `VRPRDL_VRPSolver_/README.md`. Documentação complementar do CG: `vrprdl_cg/README_cg.md`.
 
@@ -96,7 +97,7 @@ A CG usa instâncias em **JSON** em `VRPRDL-triangle/json_convertidos/` e, por d
 
 ```bash
 # Na raiz do repositório (opcional: regenerar JSON a partir dos .txt)
-julia converter_instancias_turco_para_json.jl
+julia converters/converter_instancias_turco_para_json.jl
 
 cd vrprdl_cg
 julia --project=. bootstrap.jl                                 # 1×: instantiate + precompile
@@ -118,19 +119,19 @@ chmod +x rodar_vrprdl_cg_batch.sh
 
 ## Gerar JSON / projeções e rodar o VRPSolver
 
-Os scripts `rodar_*.sh` na raiz usam caminhos **relativos à pasta do repositório** (não dependem mais do caminho absoluto da máquina original). Ajuste apenas `VRP_DEMOS_DIR`, `JULIA_BIN` e clones do VRPSolver conforme a sua instalação.
+Os scripts em `scripts/batch/` usam caminhos **relativos à raiz do repositório**. Ajuste `VRP_DEMOS_DIR`, `JULIA_BIN` e clones do VRPSolver conforme a sua instalação.
 
-Exemplos:
+Exemplos (a partir da raiz do repositório):
 
-- `rodar_vrps_turco.sh` — roda o demo CVRP clássico sobre `.vrp` em `VRPRDL-triangle/vrp_convertidos/`.
-- `rodar_vrps_cvrp_padrao_turco.sh` — instâncias CVRP padrão + consolidação `_summary.csv`.
-- `rodar_vrps_vrptw_turco.sh` / `rodar_vrps_vrptw_padrao_turco.sh` — variantes VRPTW.
+- `scripts/batch/rodar_vrps_turco.sh` — demo CVRP clássico sobre `.vrp` em `VRPRDL-triangle/vrp_convertidos/`.
+- `scripts/batch/rodar_vrps_cvrp_padrao_turco.sh` — CVRP padrão + consolidação `_summary.csv`.
+- `scripts/batch/rodar_vrps_vrptw_turco.sh` / `scripts/batch/rodar_vrps_vrptw_padrao_turco.sh` — variantes VRPTW.
 
 Ordem típica de trabalho:
 
-1. Converter instâncias txt → JSON: `julia converter_instancias_turco_para_json.jl` (executar na raiz do repositório).
-2. Gerar `.vrp` ou outros formatos: `julia converter_jsons_para_vrp.jl`, `converter_jsons_para_cvrp_padrao.jl`, etc.
-3. Executar o VRPSolver via scripts `rodar_*.sh` ou manualmente dentro de `VRPSolverDemos`.
+1. Converter instâncias txt → JSON: `julia converters/converter_instancias_turco_para_json.jl`.
+2. Gerar `.vrp` ou outros formatos: `julia converters/converter_jsons_para_vrp.jl`, `julia converters/converter_jsons_para_cvrp_padrao.jl`, etc.
+3. Executar o VRPSolver via `scripts/batch/rodar_*.sh` ou manualmente dentro de `VRPSolverDemos`.
 4. Opcionalmente rodar `vrprdl_cg` sobre JSON + logs.
 
 ---

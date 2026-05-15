@@ -1,20 +1,18 @@
-from pathlib import Path
 import math
 import re
 import sys
-import os
+from pathlib import Path
 
 import matplotlib.pyplot as plt
 
 
+def get_repo_root() -> Path:
+    """Raiz do repositório (pai de `scripts/`)."""
+    return Path(__file__).resolve().parent.parent
+
+
 def get_base_dir() -> Path:
-    if os.name == "nt":
-        return Path(
-            r"C:\Users\porin\OneDrive\Documentos\Python-Mestrado\Modelagem Matemática\Programação Inteira - Uchoa\Problema VRPRDL\instancias_turco\VRPRDL-triangle"
-        )
-    return Path(
-        "/mnt/c/Users/porin/OneDrive/Documentos/Python-Mestrado/Modelagem Matemática/Programação Inteira - Uchoa/Problema VRPRDL/instancias_turco/VRPRDL-triangle"
-    )
+    return get_repo_root() / "VRPRDL-triangle"
 
 
 def parse_vrp(vrp_path: Path):

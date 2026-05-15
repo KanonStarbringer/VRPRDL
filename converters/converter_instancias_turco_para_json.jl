@@ -12,7 +12,7 @@ const BASE_DIR_WINDOWS = raw"C:\Users\porin\OneDrive\Documentos\Python-Mestrado\
 const BASE_DIR_WSL = "/mnt/c/Users/porin/OneDrive/Documentos/Python-Mestrado/Modelagem Matemática/Programação Inteira - Uchoa/Problema VRPRDL/instancias_turco/VRPRDL-triangle"
 
 function get_base_dir()
-    return joinpath(@__DIR__, "VRPRDL-triangle")
+    return normpath(joinpath(@__DIR__, "..", "VRPRDL-triangle"))
 end
 # =========================================================
 # Utilidades de parsing

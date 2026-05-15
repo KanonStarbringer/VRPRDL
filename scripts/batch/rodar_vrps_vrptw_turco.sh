@@ -4,22 +4,23 @@
 # Logs em VRPRDL-triangle/logs_vrptw_convertidos/.
 #
 # Pré-requisitos:
-#   - rodar antes: julia converter_jsons_para_vrptw.jl
+#   - rodar antes: julia converters/converter_jsons_para_vrptw.jl
 #   - VRPSolverDemos com o demo VRPTW instalado em $VRP_VRPTW_DIR
 #
-# Uso:
-#   dos2unix rodar_vrps_vrptw_turco.sh
-#   chmod +x rodar_vrps_vrptw_turco.sh
-#   ./rodar_vrps_vrptw_turco.sh
+# Uso (na raiz do repositório):
+#   dos2unix scripts/batch/rodar_vrps_vrptw_turco.sh
+#   chmod +x scripts/batch/rodar_vrps_vrptw_turco.sh
+#   ./scripts/batch/rodar_vrps_vrptw_turco.sh
 
 set -u
 
 SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
-TURCO_DIR="$SCRIPT_DIR"
+REPO_ROOT="$(cd "$SCRIPT_DIR/../.." && pwd)"
+TURCO_DIR="$REPO_ROOT"
 BASE_DIR="$TURCO_DIR/VRPRDL-triangle"
 INST_DIR="$BASE_DIR/vrptw_convertidos"
 LOG_DIR="$BASE_DIR/logs_vrptw_convertidos"
-CONVERTER="$TURCO_DIR/converter_jsons_para_vrptw.jl"
+CONVERTER="$REPO_ROOT/converters/converter_jsons_para_vrptw.jl"
 
 VRP_VRPTW_DIR="$HOME/VRPSolver/VRPSolverDemos/other/VRPTW"
 VRP_CFG="$VRP_VRPTW_DIR/config/VRPTW_set_2.cfg"
@@ -48,7 +49,7 @@ fi
 # -----------------------------------------------------------------
 if [ ! -d "$INST_DIR" ]; then
     echo "Erro: pasta de instâncias VRPTW não encontrada: $INST_DIR"
-    echo "Dica: rode antes 'julia converter_jsons_para_vrptw.jl'"
+    echo "Dica: rode antes 'julia converters/converter_jsons_para_vrptw.jl'"
     exit 1
 fi
 if [ ! -d "$VRP_VRPTW_DIR" ]; then

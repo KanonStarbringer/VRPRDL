@@ -8,12 +8,12 @@
 # Pré-requisitos:
 #   - as instâncias .txt já devem existir em VRPRDL-triangle/vrptw_convertidos/
 #     (use o script completo rodar_vrps_vrptw_turco.sh ao menos uma vez,
-#      ou rode 'julia converter_jsons_para_vrptw.jl' manualmente).
+#      ou rode 'julia converters/converter_jsons_para_vrptw.jl' manualmente).
 #
-# Uso:
-#   dos2unix rodar_vrps_vrptw_faltantes.sh
-#   chmod +x rodar_vrps_vrptw_faltantes.sh
-#   ./rodar_vrps_vrptw_faltantes.sh
+# Uso (na raiz do repositório):
+#   dos2unix scripts/batch/rodar_vrps_vrptw_faltantes.sh
+#   chmod +x scripts/batch/rodar_vrps_vrptw_faltantes.sh
+#   ./scripts/batch/rodar_vrps_vrptw_faltantes.sh
 
 set -u
 
@@ -26,7 +26,8 @@ INSTANCE_IDS=(4 5 6 7 8 9 32 33 34 35 36 37 38 39)
 # Paths (iguais ao script completo)
 # =========================================================
 SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
-TURCO_DIR="$SCRIPT_DIR"
+REPO_ROOT="$(cd "$SCRIPT_DIR/../.." && pwd)"
+TURCO_DIR="$REPO_ROOT"
 BASE_DIR="$TURCO_DIR/VRPRDL-triangle"
 INST_DIR="$BASE_DIR/vrptw_convertidos"
 LOG_DIR="$BASE_DIR/logs_vrptw_convertidos"
@@ -42,7 +43,7 @@ mkdir -p "$LOG_DIR"
 # =========================================================
 if [ ! -d "$INST_DIR" ]; then
     echo "Erro: pasta de instâncias VRPTW não encontrada: $INST_DIR"
-    echo "Dica: rode 'julia converter_jsons_para_vrptw.jl' ou rodar_vrps_vrptw_turco.sh antes."
+    echo "Dica: rode 'julia converters/converter_jsons_para_vrptw.jl' ou ./scripts/batch/rodar_vrps_vrptw_turco.sh antes."
     exit 1
 fi
 if [ ! -d "$VRP_VRPTW_DIR" ]; then

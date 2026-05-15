@@ -2,7 +2,8 @@
 set -u
 
 SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
-BASE_DIR="$SCRIPT_DIR/VRPRDL-triangle"
+REPO_ROOT="$(cd "$SCRIPT_DIR/../.." && pwd)"
+BASE_DIR="$REPO_ROOT/VRPRDL-triangle"
 INST_DIR="$BASE_DIR/vrp_convertidos"
 LOG_DIR="$BASE_DIR/logs_vrp_convertidos"
 

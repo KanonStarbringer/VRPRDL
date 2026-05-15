@@ -50,7 +50,7 @@ using JSON3
 using Printf
 
 function get_base_dir()
-    return joinpath(@__DIR__, "VRPRDL-triangle")
+    return normpath(joinpath(@__DIR__, "..", "VRPRDL-triangle"))
 end
 
 "Cliente real = não é o depot inicial (cid=0) nem o depot final (demand=0)."

@@ -41,7 +41,7 @@ using JSON3
 using Printf
 
 function get_base_dir()
-    return joinpath(@__DIR__, "VRPRDL-triangle")
+    return normpath(joinpath(@__DIR__, "..", "VRPRDL-triangle"))
 end
 
 # ---------------------------------------------------------

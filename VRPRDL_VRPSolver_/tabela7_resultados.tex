@@ -1,0 +1,49 @@
+% Requer no preâmbulo: \usepackage{booktabs}  \usepackage{longtable}
+\begingroup
+\scriptsize
+\setlength{\tabcolsep}{3.5pt}
+\renewcommand{\arraystretch}{1.05}
+\begin{longtable}{@{}l rrrr rrrr rr@{}}
+  \caption{Resultados das 20 instâncias adicionais (pares $v_1$/$v_2$, instâncias 41--50 de Özbaygın et al.~(2017)) obtidos pelo \textsc{VrpSolver}, comparados com a Tabela~7 do mesmo artigo. As colunas $\Delta$ trazem a variação relativa do tempo de execução e do custo entre as duas abordagens. As instâncias $v_1$ posicionam os locais de entrega itinerantes mais distantes do depósito; as $v_2$, mais próximas.}
+  \label{tab:resultados-adicionais-vs-tab7} \\
+  \toprule
+  \multirow{2}{*}{Inst.} & \multicolumn{4}{c}{Özbaygın et al.~(2017), Tab.~7} & \multicolumn{4}{c}{\textsc{VrpSolver} (nosso)} & \multirow{2}{*}{\shortstack{$\Delta$ tempo\\(\%)}} & \multirow{2}{*}{\shortstack{$\Delta$ custo\\(\%)}} \\
+  \cmidrule(lr){2-5}\cmidrule(lr){6-9}
+  & Custo & \shortstack{Tempo\\(s)} & Iter. & Nós & Custo & \shortstack{Tempo\\(s)} & \shortstack{Iter.\\(CG)} & Nós & & \\
+  \midrule
+  \endfirsthead
+  \multicolumn{11}{@{}l}{\footnotesize\itshape Tabela~\ref{tab:resultados-adicionais-vs-tab7} -- continuação da página anterior.} \\
+  \toprule
+  \multirow{2}{*}{Inst.} & \multicolumn{4}{c}{Özbaygın et al.~(2017), Tab.~7} & \multicolumn{4}{c}{\textsc{VrpSolver} (nosso)} & \multirow{2}{*}{\shortstack{$\Delta$ tempo\\(\%)}} & \multirow{2}{*}{\shortstack{$\Delta$ custo\\(\%)}} \\
+  \cmidrule(lr){2-5}\cmidrule(lr){6-9}
+  & Custo & \shortstack{Tempo\\(s)} & Iter. & Nós & Custo & \shortstack{Tempo\\(s)} & \shortstack{Iter.\\(CG)} & Nós & & \\
+  \midrule
+  \endhead
+  \midrule
+  \multicolumn{11}{r@{}}{\footnotesize\itshape Continua na próxima página\dots} \\
+  \endfoot
+  \bottomrule
+  \multicolumn{11}{@{}p{0.99\linewidth}@{}}{\footnotesize $^{\dagger}$ Instância para a qual Özbaygın et al.~(2017) atingiram o tempo-limite de $\mathrm{TL}=7\,200$~s sem comprovar otimalidade. Nesses casos, $\Delta$ tempo é um \emph{limite superior} da redução, calculado com $\mathrm{TL}$ no lugar do tempo real, e o custo do artigo é apenas a melhor solução factível conhecida por eles (não o ótimo). Quando o nosso custo é estritamente menor (em negrito), melhoramos a melhor solução publicada. \par Notas: \emph{Iter.}\ no artigo refere-se ao número de iterações reportado por Özbaygın et al.~(2017); \emph{Iter.~(CG)} no nosso é o número de iterações de geração de colunas extraído do log do \textsc{VrpSolver}. As duas grandezas contam etapas afins, mas não são idênticas. Decimais em vírgula e separador de milhar em \,, conforme convenção pt-BR.} \\
+  \endlastfoot
+  41\_v1 & 3\,203 & 1249{,}35 & 33\,672 & 6\,147 & 3\,203 & 2{,}15 & 106 & 1 & $-99{,}83\,\%$ & $+0{,}00\,\%$ \\
+  41\_v2 & 2\,133 & 854{,}47 & 7\,528 & 805 & 2\,133 & 3{,}31 & 116 & 1 & $-99{,}61\,\%$ & $+0{,}00\,\%$ \\
+  42\_v1 & 2\,799 & 3{,}00 & 58 & 1 & 2\,799 & 2{,}01 & 92 & 3 & $-33{,}00\,\%$ & $+0{,}00\,\%$ \\
+  42\_v2 & 1\,946 & 1005{,}36 & 6\,472 & 743 & 1\,946 & 1{,}47 & 100 & 1 & $-99{,}85\,\%$ & $+0{,}00\,\%$ \\
+  43\_v1 & 2\,607 & $\mathrm{TL}^{\dagger}$ & 111\,845 & 14\,854 & \textbf{2\,603} & 6{,}63 & 193 & 5 & $\leq -99{,}91\,\%$\,$^{\dagger}$ & \textbf{$-0{,}15\,\%$} \\
+  43\_v2 & 1\,966 & 270{,}72 & 1\,644 & 135 & 1\,966 & 1{,}49 & 96 & 1 & $-99{,}45\,\%$ & $+0{,}00\,\%$ \\
+  44\_v1 & 2\,261 & 98{,}52 & 2\,342 & 251 & 2\,261 & 0{,}86 & 64 & 1 & $-99{,}13\,\%$ & $+0{,}00\,\%$ \\
+  44\_v2 & 1\,610 & 41{,}59 & 222 & 1 & 1\,610 & 0{,}84 & 51 & 1 & $-97{,}98\,\%$ & $+0{,}00\,\%$ \\
+  45\_v1 & 3\,217 & 1{,}63 & 34 & 1 & 3\,217 & 0{,}63 & 57 & 1 & $-61{,}35\,\%$ & $+0{,}00\,\%$ \\
+  45\_v2 & 2\,478 & 9{,}76 & 80 & 1 & 2\,478 & 1{,}59 & 72 & 1 & $-83{,}71\,\%$ & $+0{,}00\,\%$ \\
+  46\_v1 & 2\,805 & 3{,}81 & 126 & 5 & 2\,805 & 0{,}65 & 53 & 1 & $-82{,}94\,\%$ & $+0{,}00\,\%$ \\
+  46\_v2 & 2\,469 & 27{,}37 & 302 & 39 & 2\,469 & 0{,}99 & 67 & 1 & $-96{,}38\,\%$ & $+0{,}00\,\%$ \\
+  47\_v1 & 3\,339 & 3710{,}35 & 89\,246 & 21\,169 & 3\,339 & 1{,}16 & 70 & 1 & $-99{,}97\,\%$ & $+0{,}00\,\%$ \\
+  47\_v2 & 1\,946 & 68{,}96 & 556 & 37 & 1\,946 & 1{,}66 & 64 & 1 & $-97{,}59\,\%$ & $+0{,}00\,\%$ \\
+  48\_v1 & 3\,325 & 1{,}15 & 48 & 1 & 3\,325 & 0{,}66 & 56 & 1 & $-42{,}61\,\%$ & $+0{,}00\,\%$ \\
+  48\_v2 & 2\,380 & 477{,}83 & 8\,384 & 1\,493 & 2\,380 & 1{,}66 & 98 & 1 & $-99{,}65\,\%$ & $+0{,}00\,\%$ \\
+  49\_v1 & 3\,534 & 104{,}26 & 3\,084 & 595 & 3\,534 & 0{,}81 & 58 & 1 & $-99{,}22\,\%$ & $+0{,}00\,\%$ \\
+  49\_v2 & 2\,492 & 13{,}62 & 207 & 9 & 2\,492 & 0{,}96 & 67 & 1 & $-92{,}95\,\%$ & $+0{,}00\,\%$ \\
+  50\_v1 & 2\,752 & 8{,}74 & 114 & 1 & 2\,752 & 8{,}08 & 86 & 1 & $-7{,}55\,\%$ & $+0{,}00\,\%$ \\
+  50\_v2 & 2\,443 & 164{,}37 & 1\,038 & 119 & 2\,443 & 1{,}64 & 86 & 1 & $-99{,}00\,\%$ & $+0{,}00\,\%$ \\
+\end{longtable}
+\endgroup

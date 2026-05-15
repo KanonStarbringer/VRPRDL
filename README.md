@@ -1,10 +1,10 @@
 # Problema de Roteamento de Veículos com Localidades Móveis - VRPRDL (Özbaygın et al., 2017)
 
-Repositório com **instâncias** do *Vehicle Routing Problem with Roaming Delivery Locations* (VRPRDL), conversores entre formatos, scripts para acoplar ao **VRPSolver** e o subprojeto **Julia** `vrprdl_cg` (geração de colunas com **JuMP + CPLEX**).
+Repositório com **instâncias** do *Vehicle Routing Problem with Roaming Delivery Locations* (VRPRDL), o pacote **`VRPRDL_VRPSolver_/`** (demo Julia para o **VRPSolver**), conversores entre formatos, scripts de *batch* e o subprojeto **Julia** `vrprdl_cg` (geração de colunas com **JuMP + CPLEX**).
 
 Referência principal: **Özbaygın, G., Karasan, O. E., Savelsbergh, M., Yaman, H.** — *A branch-and-price algorithm for the vehicle routing problem with roaming delivery locations*, **Transportation Research Part B**, 100 (2017), 115–137. DOI: [10.1016/j.trb.2017.02.003](https://doi.org/10.1016/j.trb.2017.02.003).
 
-Uma cópia local do artigo está em `ozbaygin2017.pdf` (somente para uso acadêmico pessoal; redistribuição pode estar sujeita à licença da Elsevier).
+Os PDFs dos artigos **não** são versionados aqui (direitos autorais da editora); obtenha cópia legal pela sua biblioteca ou pelo DOI acima.
 
 ---
 
@@ -66,7 +66,8 @@ O **problema de pricing** busca colunas (rotas) com **custo reduzido negativo** 
 
 | Caminho | Conteúdo |
 |--------|-----------|
-| `VRPRDL-triangle/` | Instâncias no formato original (txt), JSON, projeções VRP/VRPTW/CVRP, logs de execução quando gerados. |
+| `VRPRDL_VRPSolver_/` | **Demo Julia** do VRPRDL para o VRPSolver: `src/` (modelo, dados, `run.jl`), `config/`, `data_vrprdl/`, scripts auxiliares e pasta `hexaly/` (scripts opcionais). Saídas de solver (`.log`, `sol_instance_*.txt`, etc.) ficam fora do Git (ver `.gitignore`). |
+| `VRPRDL-triangle/` | Instâncias no formato original (txt), JSON e projeções VRP/VRPTW/CVRP. Figuras e logs de execução são **gerados localmente** pelos scripts (não versionados). |
 | `additional_instances/` | Instâncias adicionais (segundo conjunto do artigo / variantes). |
 | `vrprdl_cg/` | Projeto Julia: **column generation** com master em JuMP+CPLEX e pricing via pool (logs VRPSolver) e/ou *bucket graph* (C++, biblioteca [bucket-graph-spprc](https://github.com/spoorendonk/bucket-graph-spprc) incluída em `third_party/`). |
 | `converter_*.jl` | Conversão entre txt ↔ JSON ↔ formatos para demos do VRPSolver. |
@@ -74,7 +75,7 @@ O **problema de pricing** busca colunas (rotas) com **custo reduzido negativo** 
 | `instance_format_description.txt` | Descrição do formato txt das instâncias Reyes/Özbaygın. |
 | `plotar_rotas_turco_batch.py` | Utilitário Python para visualização de rotas (dependências próprias). |
 
-Documentação complementar do CG: `vrprdl_cg/README_cg.md`.
+Documentação do VRPRDL no VRPSolver: `VRPRDL_VRPSolver_/README.md`. Documentação complementar do CG: `vrprdl_cg/README_cg.md`.
 
 ---
 

@@ -1,0 +1,22 @@
+# Saídas Hexaly (regeneráveis)
+hexaly/logs_hexaly/
+hexaly/sols_hexaly/
+
+# Saídas locais do VRPSolver / depuração
+sol_instance_*.txt
+BaPTree.dot
+*.log
+logs/
+logs_extra_v1/
+logs_extra_v2/
+plots/
+plots_extra/
+sols_extra_v1/
+sols_extra_v2/
+
+# Binários / consolidados (regeneráveis pelos scripts)
+*.xlsx
+*.zip
+
+__pycache__/
+*.py[cod]

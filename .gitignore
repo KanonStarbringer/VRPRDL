@@ -26,5 +26,25 @@ Thumbs.db
 *.swp
 *~
 
-# Artefato local derivado do PDF (opcional; o PDF permanece versionado)
+# Artefato local derivado do PDF (texto extraído localmente)
 ozbaygin2017.txt
+
+# PDFs de artigos (licença editorial; manter apenas localmente)
+*.pdf
+
+# Figuras e logs gerados por scripts/VRPSolver (regeneráveis)
+VRPRDL-triangle/figuras_vrp_convertidos/
+VRPRDL-triangle/logs_cvrp_padrao/
+VRPRDL-triangle/logs_vrp_convertidos/
+VRPRDL-triangle/logs_vrptw_convertidos/
+VRPRDL-triangle/logs_vrptw_padrao/
+
+# Logs de execução do projeto CG
+vrprdl_cg/logs_cg/
+vrprdl_cg/logs_cg_vrptw/
+vrprdl_cg/logs_pilot_bucket/*.log
+vrprdl_cg/logs_pilot_bucket/*.csv
+vrprdl_cg/logs_pilot_bucket_small/*.log
+vrprdl_cg/logs_pilot_bucket_small/*.csv
+vrprdl_cg/logs_pilot_pool/*.log
+vrprdl_cg/logs_pilot_pool/*.csv

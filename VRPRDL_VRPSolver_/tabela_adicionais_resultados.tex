@@ -1,0 +1,45 @@
+% Requer no preâmbulo: \usepackage{booktabs}  \usepackage{longtable}
+\begingroup
+\footnotesize
+\setlength{\tabcolsep}{4pt}
+\renewcommand{\arraystretch}{1.05}
+\begin{longtable}{@{}l r r r r r r r@{}}
+  \caption{Resultados computacionais obtidos com o \textsc{VrpSolver} para as 20 instâncias adicionais (pares $v_1$/$v_2$ derivados das instâncias 41--50 de Özbaygın et al.~(2017), com $n = 40$ clientes), no mesmo formato da Tabela~\ref{tab:resultados-vrpsolver}: melhor solução, gap na raiz, tempo de solução, número de iterações de geração de colunas, número de nós no \emph{Branch-Cut-and-Price}, número total de colunas geradas e diferença percentual de tempo em relação aos valores reportados na Tabela~7 de Özbaygın et al.~(2017). As instâncias do tipo $v_1$ posicionam os locais itinerantes \emph{mais distantes} do depósito; as do tipo $v_2$, \emph{mais próximos}.}
+  \label{tab:resultados-vrpsolver-adicionais} \\
+  \toprule
+    Instância & \shortstack{Melhor\\solução} & \shortstack{Gap na\\raiz (\%)} & \shortstack{Tempo de\\solução (s)} & \shortstack{Iterações\\(CG)} & Nós & \shortstack{Colunas\\geradas} & \shortstack{$\Delta$ tempo vs.\\Özbaygın (\%)} \\
+  \midrule
+  \endfirsthead
+  \multicolumn{8}{@{}l}{\footnotesize\itshape Tabela~\ref{tab:resultados-vrpsolver-adicionais} -- continuação da página anterior.} \\
+  \toprule
+    Instância & \shortstack{Melhor\\solução} & \shortstack{Gap na\\raiz (\%)} & \shortstack{Tempo de\\solução (s)} & \shortstack{Iterações\\(CG)} & Nós & \shortstack{Colunas\\geradas} & \shortstack{$\Delta$ tempo vs.\\Özbaygın (\%)} \\
+  \midrule
+  \endhead
+  \midrule
+  \multicolumn{8}{r@{}}{\footnotesize\itshape Continua na próxima página\dots} \\
+  \endfoot
+  \bottomrule
+  \multicolumn{8}{@{}p{0.98\linewidth}@{}}{\footnotesize $^{\dagger}$ Instância para a qual Özbaygın et al.~(2017) reportam tempo-limite (TL) na Tabela~7, sem provar otimalidade. Nesses casos, a coluna ``$\Delta$ tempo'' indica um \emph{limite superior} da redução percentual, calculado substituindo o tempo real por $\mathrm{TL} = 7\,200$~s (instâncias com $n = 40 \leq 60$).} \\
+  \endlastfoot
+  $\mathrm{41_{v1}}$ & 3\,203 & 0{,}00 & 2{,}15 & 106 & 1 & 1\,548 & $-99{,}83\,\%$ \\
+  $\mathrm{41_{v2}}$ & 2\,133 & 0{,}00 & 3{,}31 & 116 & 1 & 1\,754 & $-99{,}61\,\%$ \\
+  $\mathrm{42_{v1}}$ & 2\,799 & 0{,}54 & 2{,}01 & 92 & 3 & 1\,207 & $-33{,}00\,\%$ \\
+  $\mathrm{42_{v2}}$ & 1\,946 & 0{,}00 & 1{,}47 & 100 & 1 & 1\,623 & $-99{,}85\,\%$ \\
+  $\mathrm{43_{v1}}$ & 2\,603 & 1{,}24 & 6{,}63 & 193 & 5 & 3\,673 & $\leq -99{,}91\,\%$\,$^{\dagger}$ \\
+  $\mathrm{43_{v2}}$ & 1\,966 & 0{,}00 & 1{,}49 & 96 & 1 & 1\,781 & $-99{,}45\,\%$ \\
+  $\mathrm{44_{v1}}$ & 2\,261 & 0{,}00 & 0{,}86 & 64 & 1 & 1\,237 & $-99{,}13\,\%$ \\
+  $\mathrm{44_{v2}}$ & 1\,610 & 0{,}00 & 0{,}84 & 51 & 1 & 1\,369 & $-97{,}98\,\%$ \\
+  $\mathrm{45_{v1}}$ & 3\,217 & 0{,}00 & 0{,}63 & 57 & 1 & 1\,245 & $-61{,}35\,\%$ \\
+  $\mathrm{45_{v2}}$ & 2\,478 & 0{,}00 & 1{,}59 & 72 & 1 & 1\,728 & $-83{,}71\,\%$ \\
+  $\mathrm{46_{v1}}$ & 2\,805 & 0{,}00 & 0{,}65 & 53 & 1 & 1\,000 & $-82{,}94\,\%$ \\
+  $\mathrm{46_{v2}}$ & 2\,469 & 0{,}00 & 0{,}99 & 67 & 1 & 1\,109 & $-96{,}38\,\%$ \\
+  $\mathrm{47_{v1}}$ & 3\,339 & 0{,}00 & 1{,}16 & 70 & 1 & 1\,168 & $-99{,}97\,\%$ \\
+  $\mathrm{47_{v2}}$ & 1\,946 & 0{,}00 & 1{,}66 & 64 & 1 & 1\,506 & $-97{,}59\,\%$ \\
+  $\mathrm{48_{v1}}$ & 3\,325 & 0{,}00 & 0{,}66 & 56 & 1 & 1\,086 & $-42{,}61\,\%$ \\
+  $\mathrm{48_{v2}}$ & 2\,380 & 0{,}00 & 1{,}66 & 98 & 1 & 1\,707 & $-99{,}65\,\%$ \\
+  $\mathrm{49_{v1}}$ & 3\,534 & 0{,}00 & 0{,}81 & 58 & 1 & 930 & $-99{,}22\,\%$ \\
+  $\mathrm{49_{v2}}$ & 2\,492 & 0{,}00 & 0{,}96 & 67 & 1 & 1\,270 & $-92{,}95\,\%$ \\
+  $\mathrm{50_{v1}}$ & 2\,752 & 0{,}00 & 8{,}08 & 86 & 1 & 1\,587 & $-7{,}55\,\%$ \\
+  $\mathrm{50_{v2}}$ & 2\,443 & 0{,}00 & 1{,}64 & 86 & 1 & 1\,503 & $-99{,}00\,\%$ \\
+\end{longtable}
+\endgroup

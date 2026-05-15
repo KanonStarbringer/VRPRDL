@@ -1,0 +1,65 @@
+% Requer no preâmbulo: \usepackage{booktabs}  \usepackage{longtable}
+\begingroup
+\footnotesize
+\setlength{\tabcolsep}{4pt}
+\renewcommand{\arraystretch}{1.05}
+\begin{longtable}{@{}r r r r r r r r@{}}
+  \caption{Resultados computacionais obtidos com o \textsc{VrpSolver} para as 40 instâncias do primeiro conjunto de Özbaygın et al.~(2017), em formato análogo ao da Tabela~3 do referido artigo, acrescidas de duas colunas: o número total de colunas geradas pela geração de colunas e a diferença percentual de tempo de execução em relação aos tempos reportados na Tabela~3 de Özbaygın et al.~(2017).}
+  \label{tab:resultados-vrpsolver} \\
+  \toprule
+    Instância & \shortstack{Melhor\\solução} & \shortstack{Gap na\\raiz (\%)} & \shortstack{Tempo de\\solução (s)} & \shortstack{Iterações\\(CG)} & Nós & \shortstack{Colunas\\geradas} & \shortstack{$\Delta$ tempo vs.\\Özbaygın (\%)} \\
+  \midrule
+  \endfirsthead
+  \multicolumn{8}{@{}l}{\footnotesize\itshape Tabela~\ref{tab:resultados-vrpsolver} -- continuação da página anterior.} \\
+  \toprule
+    Instância & \shortstack{Melhor\\solução} & \shortstack{Gap na\\raiz (\%)} & \shortstack{Tempo de\\solução (s)} & \shortstack{Iterações\\(CG)} & Nós & \shortstack{Colunas\\geradas} & \shortstack{$\Delta$ tempo vs.\\Özbaygın (\%)} \\
+  \midrule
+  \endhead
+  \midrule
+  \multicolumn{8}{r@{}}{\footnotesize\itshape Continua na próxima página\dots} \\
+  \endfoot
+  \bottomrule
+  \multicolumn{8}{@{}p{0.98\linewidth}@{}}{\footnotesize $^{\dagger}$ Instância para a qual Özbaygın et al.~(2017) reportam tempo-limite (TL), sem provar otimalidade. Nesses casos, a coluna ``$\Delta$ tempo'' indica um \emph{limite superior} da redução percentual, calculado substituindo o tempo real por $\mathrm{TL}=7\,200$~s (instâncias 25, 28 e 29, com $n=60$) ou $\mathrm{TL}=21\,600$~s (instâncias 31--40, com $n=120$).} \\
+  \endlastfoot
+  1 & 901 & 0{,}00 & 0{,}40 & 18 & 1 & 362 & $-31{,}03\,\%$ \\
+  2 & 1\,286 & 0{,}00 & 0{,}41 & 14 & 1 & 218 & $+51{,}85\,\%$ \\
+  3 & 991 & 0{,}00 & 0{,}38 & 21 & 1 & 311 & $-11{,}63\,\%$ \\
+  4 & 1\,062 & 0{,}00 & 0{,}38 & 15 & 1 & 206 & $+40{,}74\,\%$ \\
+  5 & 1\,832 & 0{,}00 & 0{,}39 & 13 & 1 & 148 & $+875{,}00\,\%$ \\
+  6 & 1\,294 & 0{,}00 & 0{,}49 & 21 & 1 & 380 & $-78{,}70\,\%$ \\
+  7 & 1\,155 & 0{,}00 & 0{,}59 & 51 & 1 & 989 & $-98{,}06\,\%$ \\
+  8 & 1\,455 & 0{,}00 & 0{,}44 & 27 & 1 & 376 & $+144{,}44\,\%$ \\
+  9 & 1\,260 & 0{,}00 & 0{,}46 & 30 & 1 & 465 & $-86{,}14\,\%$ \\
+  10 & 1\,684 & 0{,}00 & 0{,}40 & 22 & 1 & 338 & $-27{,}27\,\%$ \\
+  11 & 1\,922 & 0{,}00 & 0{,}52 & 32 & 1 & 535 & $-96{,}36\,\%$ \\
+  12 & 2\,324 & 0{,}00 & 0{,}90 & 72 & 1 & 945 & $-99{,}25\,\%$ \\
+  13 & 1\,747 & 0{,}00 & 0{,}47 & 59 & 1 & 868 & $-97{,}99\,\%$ \\
+  14 & 1\,273 & 0{,}00 & 0{,}55 & 38 & 1 & 746 & $-98{,}22\,\%$ \\
+  15 & 1\,694 & 0{,}00 & 0{,}92 & 58 & 1 & 855 & $-95{,}96\,\%$ \\
+  16 & 1\,938 & 0{,}00 & 0{,}49 & 37 & 1 & 662 & $-99{,}14\,\%$ \\
+  17 & 1\,965 & 0{,}00 & 1{,}98 & 41 & 1 & 919 & $-65{,}57\,\%$ \\
+  18 & 1\,827 & 0{,}00 & 0{,}42 & 29 & 1 & 421 & $-80{,}00\,\%$ \\
+  19 & 2\,083 & 0{,}00 & 0{,}79 & 89 & 1 & 1\,113 & $-99{,}16\,\%$ \\
+  20 & 1\,822 & 0{,}00 & 0{,}50 & 51 & 1 & 855 & $-99{,}36\,\%$ \\
+  21 & 3\,761 & 0{,}00 & 1{,}20 & 77 & 1 & 1\,490 & $-99{,}80\,\%$ \\
+  22 & 2\,828 & 0{,}00 & 0{,}85 & 85 & 1 & 1\,804 & $-99{,}69\,\%$ \\
+  23 & 4\,440 & 0{,}00 & 2{,}09 & 64 & 1 & 1\,367 & $-99{,}12\,\%$ \\
+  24 & 3\,378 & 0{,}00 & 0{,}93 & 69 & 1 & 1\,486 & $-99{,}76\,\%$ \\
+  25 & 3\,161 & 0{,}00 & 1{,}44 & 108 & 1 & 1\,912 & $\leq -99{,}98\,\%$\,$^{\dagger}$ \\
+  26 & 4\,536 & 0{,}00 & 0{,}62 & 49 & 1 & 1\,047 & $-99{,}21\,\%$ \\
+  27 & 2\,865 & 0{,}00 & 0{,}99 & 85 & 1 & 1\,566 & $-99{,}67\,\%$ \\
+  28 & 4\,173 & 0{,}00 & 1{,}10 & 84 & 1 & 1\,610 & $\leq -99{,}98\,\%$\,$^{\dagger}$ \\
+  29 & 3\,964 & 0{,}00 & 0{,}93 & 69 & 1 & 1\,151 & $\leq -99{,}99\,\%$\,$^{\dagger}$ \\
+  30 & 4\,107 & 0{,}00 & 0{,}62 & 63 & 1 & 1\,048 & $-98{,}63\,\%$ \\
+  31 & 4\,935 & 0{,}00 & 8{,}36 & 225 & 1 & 5\,633 & $\leq -99{,}96\,\%$\,$^{\dagger}$ \\
+  32 & 5\,258 & 0{,}36 & 58{,}90 & 518 & 9 & 11\,872 & $\leq -99{,}73\,\%$\,$^{\dagger}$ \\
+  33 & 5\,061 & 0{,}74 & 54{,}29 & 452 & 3 & 10\,715 & $\leq -99{,}75\,\%$\,$^{\dagger}$ \\
+  34 & 5\,218 & 0{,}00 & 10{,}56 & 207 & 1 & 5\,741 & $\leq -99{,}95\,\%$\,$^{\dagger}$ \\
+  35 & 5\,498 & 0{,}00 & 8{,}98 & 234 & 1 & 5\,520 & $\leq -99{,}96\,\%$\,$^{\dagger}$ \\
+  36 & 6\,498 & 0{,}00 & 2{,}75 & 137 & 1 & 3\,531 & $\leq -99{,}99\,\%$\,$^{\dagger}$ \\
+  37 & 4\,830 & 0{,}25 & 21{,}41 & 288 & 5 & 6\,458 & $\leq -99{,}90\,\%$\,$^{\dagger}$ \\
+  38 & 5\,604 & 0{,}85 & 14{,}21 & 249 & 5 & 6\,880 & $\leq -99{,}93\,\%$\,$^{\dagger}$ \\
+  39 & 5\,841 & 0{,}00 & 5{,}46 & 156 & 1 & 4\,411 & $\leq -99{,}97\,\%$\,$^{\dagger}$ \\
+  40 & 4\,995 & 0{,}22 & 26{,}07 & 322 & 3 & 8\,642 & $\leq -99{,}88\,\%$\,$^{\dagger}$ \\
+\end{longtable}
+\endgroup

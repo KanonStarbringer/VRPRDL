@@ -1,5 +1,0 @@
-instance,status,lp_bound,mip_obj,vehicles,columns,iterations,time_s,error
-instance_0-triangle,OPTIMAL,3538.0,3538.0,15,15,1,57.59,
-instance_1-triangle,OPTIMAL,3956.0,3956.0,12,18,1,64.48,
-instance_11-triangle,OPTIMAL,7887.0,7887.0,26,34,1,119.51,
-instance_12-triangle,OPTIMAL,6635.0,6635.0,23,35,1,117.08,

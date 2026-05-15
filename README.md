@@ -45,6 +45,10 @@ Seja $R$ o conjunto de **rotas factíveis** (sequências de visitas respeitando 
 ```
 
 ```math
+\text{s.a}
+```
+
+```math
 \sum_{r\in R}\sum_{i\in N_c} a_{ir}\, z_r = 1 \quad \forall c\in C
 ```
 
